@@ -25,12 +25,14 @@
   font-size: var(--font-link-s);
   line-height: var(--base-row-unit);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .text-link-m {
   font-size: var(--font-link-m);
-  line-height: normal;
+  line-height: var(--base-row-unit);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .text-body-s-auto-upper {
