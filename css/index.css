@@ -1,0 +1,14 @@
+.course-wrapper {
+  /* layout */
+  width: 1272px;
+  height: fit-content;
+  margin: auto;
+  padding: var(--base-row-unit) var(--base-col-unit);
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-row-unit);
+  box-sizing: border-box;
+  /* style */
+  background-color: var(--color-light-black);
+  border-radius: 20px;
+}

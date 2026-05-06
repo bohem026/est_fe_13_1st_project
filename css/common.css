@@ -54,3 +54,43 @@
   --font-heading-l: calc(var(--base-font) * 3); /* 48px */
   --font-heading-xl: calc(var(--base-font) * 3.4375); /* 55px */
 }
+
+body {
+  /* font-family: "Open Sans", sans-serif;
+  font-size:var(--base-font);
+  line-height:var(--base-unit); */
+  font:
+    var(--base-font)/var(--base-row-unit) "Roboto",
+    sans-serif;
+}
+
+.cta-base {
+  /* layout */
+  height: calc(var(--base-row-unit) * 2);
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* style */
+  border-radius: 5px;
+  background: var(--color-light-primary);
+  color: var(--color-white);
+}
+
+.cta-icon {
+  width: 150px;
+  height: fit-content;
+  padding: 8.75px 22px;
+  gap: 10px;
+  letter-spacing: -1.2px;
+}
+
+.cta-reversed {
+  /* layout */
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  /* style */
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
+}
