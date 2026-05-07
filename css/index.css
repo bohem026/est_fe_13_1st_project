@@ -85,6 +85,85 @@
   color: var(--color-red);
 }
 
+.course-card-title {
+  height: calc(var(--base-row-unit) * 3);
+}
+
+.course-card-main{
+  gap: 16px;
+}
+
+.course-card-main p{
+  margin-bottom: var(--base-row-unit);
+}
+
+.course-card-main hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background: var(--color-gray);
+}
+
+.course-card-main-difficulty {
+  gap: 10px;
+  height: var(--base-row-unit);
+}
+
+.course-card-main-difficulty>span{
+  font-size: var(--base-font);
+}
+
+.course-card-main-difficulty > ul {
+  display: flex;
+  gap: 3px;
+}
+
+.course-card-main-difficulty > span{
+  color: var(--color-super-light-gray);
+}
+
+.difficulty-gui {
+  /* layout */
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  /* style */
+  background-color: var(--color-light-primary);
+  border-radius: 50%;
+}
+
+.difficulty-gui-off{
+  /* layout */
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  /* style */
+  background-color: var(--color-gray);
+  border-radius: 50%;
+}
+
+.course-card-main-stack{
+  gap: 10px;
+}
+
+.course-card-main-stack span:first-child{
+  color: var(--color-light-primary);
+}
+
+.course-card-main-stack span:last-child{
+  color: var(--color-light-gray);
+}
+
+.course-card-main-cta span{
+  background: var(--color-light-primary-low-transparency);
+  border-color: var(--color-light-primary);
+  color: var(--color-light-primary);
+}
+/*============== 주후산: 강좌 소개 ==============*/
+
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 
 .target-section {
@@ -246,84 +325,4 @@
 }
 
 /* 최수민 : 이스트캠프 콘텐츠 섹션 스타일 끝 */
-
-.course-card-title {
-  height: calc(var(--base-row-unit) * 3);
-}
-
-.course-card-main{
-  gap: 16px;
-}
-
-.course-card-main p{
-  margin-bottom: var(--base-row-unit);
-}
-
-.course-card-main hr{
-  border: 0;
-  height: 1px;
-  width: 100%;
-  margin: 0;
-  background: var(--color-gray);
-}
-
-.course-card-main-difficulty {
-  gap: 10px;
-  height: var(--base-row-unit);
-}
-
-.course-card-main-difficulty>span{
-  font-size: var(--base-font);
-}
-
-.course-card-main-difficulty > ul {
-  display: flex;
-  gap: 3px;
-}
-
-.course-card-main-difficulty > span{
-  color: var(--color-super-light-gray);
-}
-
-.difficulty-gui{
-  /* layout */
-.difficulty-gui {
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  /* style */
-  background-color: var(--color-light-primary);
-  border-radius: 50%;
-}
-
-.difficulty-gui-off{
-  /* layout */
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  /* style */
-  background-color: var(--color-gray);
-  border-radius: 50%;
-}
-
-.course-card-main-stack{
-  gap: 10px;
-}
-
-.course-card-main-stack span:first-child{
-  color: var(--color-light-primary);
-}
-
-.course-card-main-stack span:last-child{
-  color: var(--color-light-gray);
-}
-
-.course-card-main-cta span{
-  background: var(--color-light-primary-low-transparency);
-  border-color: var(--color-light-primary);
-  color: var(--color-light-primary);
-}
-/*============== 주후산: 강좌 소개 ==============*/
 
