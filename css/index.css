@@ -22,8 +22,8 @@
 
 .cta-reversed {
   /* layout */
-  padding-top: 6.75px;
-  padding-bottom: 6.75px;
+  padding-top: 7.75px;
+  padding-bottom: 7.75px;
   /* style */
   background: var(--color-transparent);
   color: var(--color-light-primary);
@@ -58,26 +58,65 @@
 
 .course-wrapper > div:first-child {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
-.course-wrapper > div:last-child{
+.course-wrapper > div:last-child {
   gap: var(--base-row-unit);
+  margin: auto;
 }
+
+/* toggle button */
+.hidden-radio {
+  display: none;
+}
+.toggle-label {
+  cursor: pointer;
+}
+.toggle-label a {
+  pointer-events: none;
+}
+
+#toggle-online:checked ~ .cta-group .both-btn,
+#toggle-both:checked ~ .cta-group .online-btn {
+  /* layout */
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  /* style */
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
+}
+/* toggle button */
 
 .course-card {
   /* layout */
   width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
+  box-sizing: border-box;
   /* style */
   background: var(--color-black);
   border-radius: 20px;
+  /* animation */
+  transition: transform 0.3s ease;
 }
 
-.course-card-row{
-  width: 100%;
+.course-card:hover {
+  /* animation */
+  transform: scale(1.02);
+  box-shadow: 1px 1px 15px rgba(255, 255, 0,0.75);
+}
+
+.course-card-row {
+  width: fit-content;
   gap: var(--base-col-unit);
 }
+
+/* 
+.course-wrapper > div:last-child > div:last-child article:last-child {
+  background: var(--color-transparent);
+}
+   */
 
 .course-card-header > span:last-child {
   background: var(--color-red-low-transparency);
@@ -85,19 +124,19 @@
   color: var(--color-red);
 }
 
-.course-card-title{
+.course-card-title {
   height: calc(var(--base-row-unit) * 3);
 }
 
-.course-card-main{
+.course-card-main {
   gap: 16px;
 }
 
-.course-card-main p{
+.course-card-main p {
   margin-bottom: var(--base-row-unit);
 }
 
-.course-card-main hr{
+.course-card-main hr {
   border: 0;
   height: 1px;
   width: 100%;
@@ -114,7 +153,7 @@
   height: var(--base-row-unit);
 }
 
-.course-card-main-difficulty>span{
+.course-card-main-difficulty > span {
   font-size: var(--base-font);
 }
 
@@ -123,7 +162,7 @@
   gap: 3px;
 }
 
-.course-card-main-difficulty > span{
+.course-card-main-difficulty > span {
   color: var(--color-super-light-gray);
 }
 
@@ -138,7 +177,7 @@
   border-radius: 50%;
 }
 
-.difficulty-gui-off{
+.difficulty-gui-off {
   /* layout */
   display: flex;
   align-items: center;
@@ -149,26 +188,25 @@
   border-radius: 50%;
 }
 
-.course-card-main-stack{
+.course-card-main-stack {
   gap: 10px;
 }
 
-.course-card-main-stack span:first-child{
+.course-card-main-stack span:first-child {
   color: var(--color-light-primary);
 }
 
-.course-card-main-stack span:last-child{
+.course-card-main-stack span:last-child {
   color: var(--color-light-gray);
 }
 
-.course-card-main-cta span{
+.course-card-main-cta span {
   background: var(--color-light-primary-low-transparency);
   border-color: var(--color-light-primary);
   color: var(--color-light-primary);
 }
 
 /*============== 주후산: 강좌 소개 ==============*/
-
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 
