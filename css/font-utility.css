@@ -35,6 +35,11 @@
   text-transform: uppercase;
 }
 
+.text-body-s-auto{
+  font-size: var(--font-body-s-auto-upper);
+  line-height: normal;
+}
+
 .text-body-s-auto-upper {
   font-size: var(--font-body-s-auto-upper);
   line-height: normal;
