@@ -12,3 +12,24 @@
   background-color: var(--color-light-black);
   border-radius: 20px;
 }
+
+.course-wrapper > div {
+  display: flex;
+  gap: 10px;
+}
+
+.course-card-header > span:last-child {
+  background: var(--color-red-low-transparency);
+  border-color: var(--color-red);
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.course-card{
+  /* layout */
+  width: 376px;
+  padding: var(--base-row-unit) var(--base-col-unit);
+  /* style */
+  background: var(--color-black);
+  border-radius: 20px;
+}
