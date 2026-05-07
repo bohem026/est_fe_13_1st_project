@@ -280,6 +280,7 @@
 
 .roadmap-card-icon span {
   color: var(--color-light-primary);
+   font-size: var(--font-body-icon-l);
 }
 
 .roadmap-badge {
