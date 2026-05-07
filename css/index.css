@@ -1,9 +1,12 @@
+/*============== 주후산: 강좌 소개 ==============*/
 .cta-base {
+  /* layout */
   height: calc(var(--base-row-unit) * 2);
   padding: 0 30px;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;
+  /* style */
   border-radius: 5px;
   background: var(--color-light-primary);
   color: var(--color-white);
@@ -18,19 +21,23 @@
 }
 
 .cta-reversed {
+  /* layout */
   padding-top: 6.75px;
   padding-bottom: 6.75px;
+  /* style */
   background: var(--color-transparent);
   color: var(--color-light-primary);
   border: 2px solid var(--color-light-primary);
 }
 
 .info-rounded {
+  /* layout */
   height: var(--base-row-unit);
   padding: 3.75px 12px;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;
+  /* style */
   border-radius: 9999px;
   background: var(--color-white-low-transparency);
   border: 1px solid var(--color-white);
@@ -38,9 +45,7 @@
 
 .course-wrapper {
   /* layout */
-  width: 1272px;
   height: fit-content;
-  margin: auto;
   padding: var(--base-row-unit) var(--base-col-unit);
   display: flex;
   flex-direction: column;
@@ -51,16 +56,13 @@
   border-radius: 20px;
 }
 
-.course-wrapper > div {
+.course-wrapper > div:first-child {
   display: flex;
   gap: 10px;
 }
 
-.course-card-header > span:last-child {
-  background: var(--color-red-low-transparency);
-  border-color: var(--color-red);
-  color: var(--color-red);
-  font-weight: bold;
+.course-wrapper > div:last-child{
+  gap: var(--base-row-unit);
 }
 
 .course-card {
@@ -70,6 +72,17 @@
   /* style */
   background: var(--color-black);
   border-radius: 20px;
+}
+
+.course-card-row{
+  width: 100%;
+  gap: var(--base-col-unit);
+}
+
+.course-card-header > span:last-child {
+  background: var(--color-red-low-transparency);
+  border-color: var(--color-red);
+  color: var(--color-red);
 }
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
@@ -238,8 +251,29 @@
   height: calc(var(--base-row-unit) * 3);
 }
 
+.course-card-main{
+  gap: 16px;
+}
+
+.course-card-main p{
+  margin-bottom: var(--base-row-unit);
+}
+
+.course-card-main hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background: var(--color-gray);
+}
+
 .course-card-main-difficulty {
   gap: 10px;
+  height: var(--base-row-unit);
+}
+
+.course-card-main-difficulty>span{
+  font-size: var(--base-font);
 }
 
 .course-card-main-difficulty > ul {
@@ -247,17 +281,49 @@
   gap: 3px;
 }
 
+.course-card-main-difficulty > span{
+  color: var(--color-super-light-gray);
+}
+
+.difficulty-gui{
+  /* layout */
 .difficulty-gui {
   display: flex;
   align-items: center;
-  /* 1. 반드시 가로와 세로가 같아야 합니다 (정사각형) */
   width: 10px;
   height: 10px;
-
-  /* 2. 배경색 또는 보더를 지정합니다 */
+  /* style */
   background-color: var(--color-light-primary);
-  /* border: 2px solid var(--color-white); */
-
-  /* 3. 모서리를 50% 깎으면 원이 됩니다 */
   border-radius: 50%;
 }
+
+.difficulty-gui-off{
+  /* layout */
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  /* style */
+  background-color: var(--color-gray);
+  border-radius: 50%;
+}
+
+.course-card-main-stack{
+  gap: 10px;
+}
+
+.course-card-main-stack span:first-child{
+  color: var(--color-light-primary);
+}
+
+.course-card-main-stack span:last-child{
+  color: var(--color-light-gray);
+}
+
+.course-card-main-cta span{
+  background: var(--color-light-primary-low-transparency);
+  border-color: var(--color-light-primary);
+  color: var(--color-light-primary);
+}
+/*============== 주후산: 강좌 소개 ==============*/
+
