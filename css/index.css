@@ -74,16 +74,26 @@
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 
+/* 💡 화면 깨짐 방지용 투명 망토 */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 .target-section {
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #181924;
+  background-color: var(--color-navy); /* 변수 적용: 배경색 */
   padding: 60px 80px;
   border-radius: 20px;
-  color: #ffffff;
-  max-width: 1200px;
-  margin: 50px auto;
+  color: var(--color-white); /* 변수 적용: 기본 폰트색 */
   gap: 50px;
 }
 
@@ -104,12 +114,14 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border: 1px solid #4a90e2;
+  border: 1px solid var(--color-light-primary); /* 변수 적용: 파란색 테두리 */
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(74, 144, 226, 0.05);
+  background-color: var(
+    --color-light-primary-low-transparency
+  ); /* 변수 적용: 파란색 반투명 배경 */
 }
 
 .icon-box img {
@@ -124,15 +136,15 @@
 }
 
 .target-text strong {
-  font-size: 16px;
+  font-size: var(--font-body-m); /* 변수 적용: 16px */
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-white);
   line-height: 1.4;
 }
 
 .target-text p {
-  font-size: 14px;
-  color: #a0a4b8;
+  font-size: var(--font-body-s-plus); /* 변수 적용: 14px */
+  color: var(--color-super-light-gray); /* 변수 적용: 회색 폰트 */
   line-height: 1.6;
   margin: 0;
 }
@@ -147,79 +159,75 @@
 }
 
 .target-header h2 {
-  font-size: 32px;
+  font-size: var(--font-heading-m); /* 변수 적용: 32px */
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
 }
 
 .target-header .highlight {
-  color: #4a90e2;
+  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
 }
 
 .target-header p {
-  font-size: 16px;
-  color: #d1d5e5;
+  font-size: var(--font-body-m); /* 변수 적용: 16px */
+  color: var(--color-super-light-gray);
   line-height: 1.6;
   margin: 0;
 }
+/* 최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
 
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+/* 최수민 : 콘텐츠 섹션 스타일 시작 */
+body {
+  background-color: var(--color-black); /* 변수 적용: 전체 배경색 */
+  margin: 0;
 }
 
-/*  최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
-
-/* 최수민 : 이스트캠프 콘텐츠 섹션 스타일 시작 */
-
 .contents-section {
-  background-color: #0b0c12; /* 배경색은 팀 프로젝트 톤에 맞춰서 조절! */
-  padding: 100px 0;
-  color: #fff;
+  padding: 80px 0;
 }
 
 .contents-inner {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  background-color: transparent;
+  padding: 60px 80px;
+  border-radius: 20px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* 헤더 부분 (제목, 설명) */
+/* 헤더 부분 */
 .contents-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .contents-header h2 {
-  font-size: 32px;
+  font-size: var(--font-heading-m); /* 변수 적용: 32px */
   font-weight: 700;
-  color: #4b89ff; /* 포인트 파란색 */
-  margin-bottom: 15px;
+  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
+  margin-bottom: 10px;
 }
 
-/* 카드 리스트 레이아웃 */
 .card-list {
   display: flex;
   gap: 30px;
   justify-content: center;
+  width: 100%;
 }
 
-/* 카드 개별 스타일 */
-.card {
+.contents-card {
   flex: 1;
-  background: #1c1d26;
+  background: var(--color-light-black); /* 변수 적용: 카드 배경색 */
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px); /* 마우스 올리면 살짝 올라가는 효과 */
+.contents-card:hover {
+  transform: translateY(-10px);
 }
 
 .card-image img {
@@ -231,8 +239,7 @@
 .card-body {
   padding: 24px;
 }
-
-/* 최수민 : 이스트캠프 콘텐츠 섹션 스타일 끝 */
+/* 최수민 : 콘텐츠 섹션 스타일 끝 */
 
 .course-card-title {
   height: calc(var(--base-row-unit) * 3);
