@@ -56,12 +56,14 @@
 }
 
 body {
+  background-color: var(--color-black);
   /* font-family: "Open Sans", sans-serif;
   font-size:var(--base-font);
   line-height:var(--base-unit); */
   font:
     var(--base-font)/var(--base-row-unit) "Roboto",
     sans-serif;
+  color: var(--color-white);
 }
 
 .cta-base {

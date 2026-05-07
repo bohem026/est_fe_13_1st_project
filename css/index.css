@@ -12,3 +12,9 @@
   background-color: var(--color-light-black);
   border-radius: 20px;
 }
+
+.course-wrapper > div {
+  display: flex;
+  gap: 10px;
+}
+
