@@ -72,6 +72,157 @@
   border-radius: 20px;
 }
 
+/* 최윤지: roadmap 시작 */
+.roadmap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 81px 48px;
+  width: 1272px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  gap: 54px;
+}
+
+/* roadmap-left */
+.roadmap-left {
+  width: 393px;
+  padding-top: 54px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  position: sticky;
+  top: 81px;
+  box-sizing: border-box;
+}
+
+.roadmap-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.roadmap-left span {
+  font-size: var(--font-heading-l);
+  line-height: calc(var(--base-row-unit) * 2);
+  color: var(--color-light-primary);
+  font-weight: bold;
+}
+
+.roadmap-left h2 {
+  font-size: var(--font-heading-l);
+  line-height: calc(var(--base-row-unit) * 2);
+  color: var(--color-white);
+  margin: 0;
+}
+
+.roadmap-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-desc p {
+  font-size: var(--font-body-l);
+  line-height: calc(var(--base-row-unit) * 2);
+  color: var(--color-super-light-gray);
+  margin: 0;
+}
+
+.roadmap-desc p + p {
+  margin-top: -12px;
+}
+
+/* roadmap-right */
+.roadmap-right {
+  width: 540px;
+  height: 630px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 27px;
+}
+
+.roadmap-right::-webkit-scrollbar {
+  display: none;
+}
+
+/* roadmap-card */
+.roadmap-card {
+  width: 540px;
+  padding: 24px;
+  gap: 27px;
+  border-radius: 16px;
+  background-color: var(--color-light-black);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.roadmap-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 54px;
+}
+
+.roadmap-card-icon {
+  width: 54px;
+  height: 54px;
+  padding: 13px 15px 14px 15px;
+  border-radius: 15px;
+  background-color: var(--color-light-primary-low-transparency);
+  border: 1px solid var(--color-light-primary);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmap-badge {
+  height: 27px;
+  padding: 3.75px 12px;
+  border-radius: 9999px;
+  background-color: var(--color-light-primary);
+  color: var(--color-white);
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: var(--font-body-s-plus);
+}
+
+.roadmap-card-image {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.roadmap-card-image img {
+  width: 100%;
+  height: 306.67px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.roadmap-card h3 {
+  font-size: var(--font-heading-m);
+  line-height: calc(var(--base-row-unit) * 2);
+  color: var(--color-white);
+  margin: 0;
+  font-weight: 700;
+}
+
+.roadmap-card-desc {
+  font-size: var(--font-body-m-plus);
+  line-height: var(--base-row-unit);
+  color: var(--color-super-light-gray);
+  margin: 0;
+}
+/* 최윤지: roadmap 끝 */
+
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 
 .target-section {
