@@ -65,3 +65,8 @@ body {
     sans-serif;
   color: var(--color-white);
 }
+
+.container {
+  width: 1272px;
+  margin: 0 auto;
+}
