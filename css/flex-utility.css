@@ -1,6 +1,12 @@
 .display-flex {
   display: flex;
 }
+.display-none{
+  display: none;
+}
+.invisible{
+  background: var(--color-transparent);
+}
 .flex-column {
   flex-direction: column;
 }

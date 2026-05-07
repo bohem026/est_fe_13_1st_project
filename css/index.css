@@ -22,8 +22,8 @@
 
 .cta-reversed {
   /* layout */
-  padding-top: 6.75px;
-  padding-bottom: 6.75px;
+  padding-top: 7.75px;
+  padding-bottom: 7.75px;
   /* style */
   background: var(--color-transparent);
   color: var(--color-light-primary);
@@ -58,26 +58,65 @@
 
 .course-wrapper > div:first-child {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .course-wrapper > div:last-child {
   gap: var(--base-row-unit);
+  margin: auto;
 }
+
+/* toggle button */
+.hidden-radio {
+  display: none;
+}
+.toggle-label {
+  cursor: pointer;
+}
+.toggle-label a {
+  pointer-events: none;
+}
+
+#toggle-online:checked ~ .cta-group .both-btn,
+#toggle-both:checked ~ .cta-group .online-btn {
+  /* layout */
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  /* style */
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
+}
+/* toggle button */
 
 .course-card {
   /* layout */
   width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
+  box-sizing: border-box;
   /* style */
   background: var(--color-black);
   border-radius: 20px;
+  /* animation */
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  /* animation */
+  transform: scale(1.02);
+  box-shadow: 1px 1px 15px rgba(255, 255, 0,0.75);
 }
 
 .course-card-row {
-  width: 100%;
+  width: fit-content;
   gap: var(--base-col-unit);
 }
+
+/* 
+.course-wrapper > div:last-child > div:last-child article:last-child {
+  background: var(--color-transparent);
+}
+   */
 
 .course-card-header > span:last-child {
   background: var(--color-red-low-transparency);

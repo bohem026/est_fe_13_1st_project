@@ -43,20 +43,28 @@
       </section>
       <!-- 주후산: 강좌 소개 -->
       <section class="course-wrapper container">
-        <div>
-          <a
-            href="#"
-            class="cta-base cta-icon font text-link-m text-center justify-content-center"
-            ><span class="material-icons text-body-icon-m">computer</span
-            >온라인</a
-          >
-          <a
-            href="#"
-            class="cta-base cta-reversed cta-icon font text-link-m text-center justify-content-center"
-            ><span class="material-icons text-body-icon-m">person</span
-            >온&middot;오프라인</a
-          >
+        <!-- toggle button -->
+        <input type="radio" id="toggle-online" name="course-type" class="hidden-radio" checked>
+        <input type="radio" id="toggle-both" name="course-type" class="hidden-radio">
+        <div class="cta-group display-flex" style="gap: 10px;">
+          <label for="toggle-online" class="toggle-label">
+            <a
+              href="#"
+              class="cta-base cta-icon text-link-m text-center justify-content-center online-btn"
+              ><span class="material-icons text-body-icon-m">computer</span
+              >온라인</a
+            >
+          </label>
+          <label for="toggle-both" class="toggle-label">
+            <a
+              href="#"
+              class="cta-base cta-icon text-link-m text-center justify-content-center both-btn"
+              ><span class="material-icons text-body-icon-m">person</span
+              >온&middot;오프라인</a
+            >
+          </label>
         </div>
+        <!-- toggle button -->
 
         <div class="display-flex flex-column justify-content-between">
           <div class="course-card-row display-flex justify-content-between">
@@ -265,7 +273,6 @@
                 </div>
                 <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
                 <div class="course-card-main display-flex flex-column">
-                  <!-- <div class="display-flex flex-column"> -->
                   <div class="course-card-main-difficulty display-flex">
                     <ul class="display-flex">
                       <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
@@ -281,8 +288,6 @@
                     CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
                     설계합니다.
                   </p>
-                  <!-- </div> -->
-                  <!-- <div> -->
                   <div class="course-card-main-stack display-flex">
                     <span class="material-icons text-body-icon-m">build</span>
                     <span>Python, LLM, RAG</span>
@@ -292,7 +297,6 @@
                     <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
                     <a href="#" class="text-link-s">상세보기 &rarr;</a>
                   </div>
-                  <!-- </div> -->
                 </div>
               </div>
             </article>
