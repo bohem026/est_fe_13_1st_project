@@ -25,7 +25,7 @@
   font-weight: bold;
 }
 
-.course-card{
+.course-card {
   /* layout */
   width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
@@ -33,3 +33,96 @@
   background: var(--color-black);
   border-radius: 20px;
 }
+
+/*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
+
+.target-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181924;
+  padding: 80px 100px;
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 50px 0;
+  gap: 50px;
+}
+
+.target-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  flex: 1;
+}
+
+.target-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon-box {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #4a90e2;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(74, 144, 226, 0.05);
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+}
+
+.target-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.target-text strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.target-text p {
+  font-size: 14px;
+  color: #a0a4b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.target-header {
+  flex-shrink: 0;
+  width: 320px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.target-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.target-header .highlight {
+  color: #4a90e2;
+}
+
+.target-header p {
+  font-size: 16px;
+  color: #d1d5e5;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*  최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
