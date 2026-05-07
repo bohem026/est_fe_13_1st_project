@@ -21,7 +21,7 @@ body {
 /* 2. 전체 구역 (양쪽으로 찢기) */
 .qna-section {
   display: flex;
-  justify-content: space-between; /* 왼쪽 리스트와 오른쪽 제목을 양 끝으로! */
+  justify-content: space-between; /* 왼쪽 리스트와 오른쪽 제목을 양 끝으로 */
   align-items: center;
   width: 100%;
   max-width: 1100px;
