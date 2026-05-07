@@ -278,6 +278,10 @@
   justify-content: center;
 }
 
+.roadmap-card-icon span {
+  color: var(--color-light-primary);
+}
+
 .roadmap-badge {
   height: 27px;
   padding: 3.75px 12px;
@@ -287,6 +291,8 @@
   white-space: nowrap;
   box-sizing: border-box;
   font-size: var(--font-body-s-plus);
+  display: inline-flex;
+  align-items: center;
 }
 
 .roadmap-card-image {
