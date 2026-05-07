@@ -1,3 +1,41 @@
+.cta-base {
+  height: calc(var(--base-row-unit) * 2);
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: var(--color-light-primary);
+  color: var(--color-white);
+}
+
+.cta-icon {
+  width: 150px;
+  height: fit-content;
+  padding: 8.75px 22px;
+  gap: 10px;
+  letter-spacing: -1.2px;
+}
+
+.cta-reversed {
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
+}
+
+.info-rounded {
+  height: var(--base-row-unit);
+  padding: 3.75px 12px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  background: var(--color-white-low-transparency);
+  border: 1px solid var(--color-white);
+}
+
 .course-wrapper {
   /* layout */
   width: 1272px;
@@ -25,11 +63,208 @@
   font-weight: bold;
 }
 
-.course-card{
+.course-card {
   /* layout */
   width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
   /* style */
   background: var(--color-black);
   border-radius: 20px;
+}
+
+/*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
+
+/* 💡 화면 깨짐 방지용 투명 망토 */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
+.target-section {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-navy); /* 변수 적용: 배경색 */
+  padding: 60px 80px;
+  border-radius: 20px;
+  color: var(--color-white); /* 변수 적용: 기본 폰트색 */
+  gap: 50px;
+}
+
+.target-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  flex: 1;
+}
+
+.target-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon-box {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-light-primary); /* 변수 적용: 파란색 테두리 */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(
+    --color-light-primary-low-transparency
+  ); /* 변수 적용: 파란색 반투명 배경 */
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+}
+
+.target-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.target-text strong {
+  font-size: var(--font-body-m); /* 변수 적용: 16px */
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 1.4;
+}
+
+.target-text p {
+  font-size: var(--font-body-s-plus); /* 변수 적용: 14px */
+  color: var(--color-super-light-gray); /* 변수 적용: 회색 폰트 */
+  line-height: 1.6;
+  margin: 0;
+}
+
+.target-header {
+  flex-shrink: 0;
+  width: 320px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.target-header h2 {
+  font-size: var(--font-heading-m); /* 변수 적용: 32px */
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.target-header .highlight {
+  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
+}
+
+.target-header p {
+  font-size: var(--font-body-m); /* 변수 적용: 16px */
+  color: var(--color-super-light-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+/* 최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
+
+/* 최수민 : 콘텐츠 섹션 스타일 시작 */
+body {
+  background-color: var(--color-black); /* 변수 적용: 전체 배경색 */
+  margin: 0;
+}
+
+.contents-section {
+  padding: 80px 0;
+}
+
+.contents-inner {
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 60px 80px;
+  border-radius: 20px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 헤더 부분 */
+.contents-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contents-header h2 {
+  font-size: var(--font-heading-m); /* 변수 적용: 32px */
+  font-weight: 700;
+  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
+  margin-bottom: 10px;
+}
+
+.card-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.contents-card {
+  flex: 1;
+  background: var(--color-light-black); /* 변수 적용: 카드 배경색 */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.contents-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 24px;
+}
+/* 최수민 : 콘텐츠 섹션 스타일 끝 */
+
+.course-card-title {
+  height: calc(var(--base-row-unit) * 3);
+}
+
+.course-card-main-difficulty {
+  gap: 10px;
+}
+
+.course-card-main-difficulty > ul {
+  display: flex;
+  gap: 3px;
+}
+
+.difficulty-gui {
+  display: flex;
+  align-items: center;
+  /* 1. 반드시 가로와 세로가 같아야 합니다 (정사각형) */
+  width: 10px;
+  height: 10px;
+
+  /* 2. 배경색 또는 보더를 지정합니다 */
+  background-color: var(--color-light-primary);
+  /* border: 2px solid var(--color-white); */
+
+  /* 3. 모서리를 50% 깎으면 원이 됩니다 */
+  border-radius: 50%;
 }
