@@ -1,3 +1,41 @@
+.cta-base {
+  height: calc(var(--base-row-unit) * 2);
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: var(--color-light-primary);
+  color: var(--color-white);
+}
+
+.cta-icon {
+  width: 150px;
+  height: fit-content;
+  padding: 8.75px 22px;
+  gap: 10px;
+  letter-spacing: -1.2px;
+}
+
+.cta-reversed {
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
+}
+
+.info-rounded {
+  height: var(--base-row-unit);
+  padding: 3.75px 12px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  background: var(--color-white-low-transparency);
+  border: 1px solid var(--color-white);
+}
+
 .course-wrapper {
   /* layout */
   width: 1272px;
@@ -136,3 +174,30 @@
 }
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
+.course-card-title {
+  height: calc(var(--base-row-unit) * 3);
+}
+
+.course-card-main-difficulty {
+  gap: 10px;
+}
+
+.course-card-main-difficulty > ul {
+  display: flex;
+  gap: 3px;
+}
+
+.difficulty-gui {
+  display: flex;
+  align-items: center;
+  /* 1. 반드시 가로와 세로가 같아야 합니다 (정사각형) */
+  width: 10px;
+  height: 10px;
+
+  /* 2. 배경색 또는 보더를 지정합니다 */
+  background-color: var(--color-light-primary);
+  /* border: 2px solid var(--color-white); */
+
+  /* 3. 모서리를 50% 깎으면 원이 됩니다 */
+  border-radius: 50%;
+}
