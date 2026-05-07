@@ -76,14 +76,25 @@
   height: calc(var(--base-row-unit) * 3);
 }
 
+.course-card-main-difficulty{
+  gap: 10px;
+}
+
+.course-card-main-difficulty > ul{
+  display: flex;
+  gap: 3px;
+}
+
 .difficulty-gui{
+  display: flex;
+  align-items: center;
   /* 1. 반드시 가로와 세로가 같아야 합니다 (정사각형) */
   width: 10px;
   height: 10px;
 
   /* 2. 배경색 또는 보더를 지정합니다 */
   background-color: var(--color-light-primary);
-  border: 2px solid var(--color-white); /* 테두리가 있는 원을 원할 경우 */
+  /* border: 2px solid var(--color-white); */
 
   /* 3. 모서리를 50% 깎으면 원이 됩니다 */
   border-radius: 50%;
