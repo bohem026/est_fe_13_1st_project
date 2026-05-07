@@ -41,10 +41,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: #181924;
-  padding: 80px 100px;
+  padding: 60px 80px;
   border-radius: 20px;
   color: #ffffff;
-  margin: 50px 0;
+  max-width: 1200px;
+  margin: 50px auto;
   gap: 50px;
 }
 
@@ -123,6 +124,15 @@
   color: #d1d5e5;
   line-height: 1.6;
   margin: 0;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
