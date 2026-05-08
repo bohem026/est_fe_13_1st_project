@@ -1,14 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이스트캠프 - 신청 안내</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
   <body>
     <section class="qna-section">
       <h2 class="hidden">질문 및 답변 영역</h2>
@@ -53,5 +56,526 @@
         <p>지원 자격을 갖추신 분이라면<br />누구나 신청할 수 있습니다.</p>
       </div>
     </section>
+=======
+    <!-- header 박은수 -->
+    <header>
+      <div class="nav-container">
+        <h1>
+          <a href="index.html">
+            <img src="" alt="Logo">
+            <span>Logo</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="">인공지능사관학교</a></li>
+          <li><a href="">오르미캠프</a></li>
+          <li><a href="">모집과정</a></li>
+          <li><button class="nav-CTA">지원하기</button></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero 박은수 -->
+      <section class="hero">
+        <h3>기초부터 실무프로잭트까지</h3>
+        <h3>성장의 모든 과정을 함께합니다.</h3>
+        <img src="" alt="logo-image">
+        <img src="" alt="Logo">
+      </section>
+      <!-- 주후산: 강좌 소개 -->
+      <section class="course-wrapper container">
+        <!-- toggle button -->
+        <input type="radio" id="toggle-online" name="course-type" class="hidden-radio" checked>
+        <input type="radio" id="toggle-both" name="course-type" class="hidden-radio">
+        <div class="cta-group display-flex" style="gap: 10px;">
+          <label for="toggle-online" class="toggle-label">
+            <a
+              href="#"
+              class="cta-base cta-icon text-link-m text-center justify-content-center online-btn"
+              ><span class="material-icons text-body-icon-m">computer</span
+              >온라인</a
+            >
+          </label>
+          <label for="toggle-both" class="toggle-label">
+            <a
+              href="#"
+              class="cta-base cta-icon text-link-m text-center justify-content-center both-btn"
+              ><span class="material-icons text-body-icon-m">person</span
+              >온&middot;오프라인</a
+            >
+          </label>
+        </div>
+        <!-- toggle button -->
+
+        <div class="display-flex flex-column justify-content-between">
+          <div class="course-card-row display-flex justify-content-between">
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <!-- <div class="display-flex flex-column"> -->
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span class="text-body-s-auto">중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <!-- </div> -->
+                  <!-- <div> -->
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <!-- <div class="display-flex flex-column"> -->
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span class="text-body-s-auto">중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <!-- </div> -->
+                  <!-- <div> -->
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <!-- <div class="display-flex flex-column"> -->
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span class="text-body-s-auto">중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <!-- </div> -->
+                  <!-- <div> -->
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="course-card-row display-flex justify-content-between">
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <!-- <div class="display-flex flex-column"> -->
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span>중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <!-- </div> -->
+                  <!-- <div> -->
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <!-- <div class="display-flex flex-column"> -->
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span class="text-body-s-auto">중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <!-- </div> -->
+                  <!-- <div> -->
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="display-flex flex-column row-gap-1">
+                <div class="course-card-header display-flex justify-content-between">
+                  <span class="info-rounded text-body-s-auto-upper">frontend</span
+                  ><span class="info-rounded text-body-s-auto-upper">04.28까지</span>
+                </div>
+                <div class="course-card-title display-flex align-items-center"><h3 class="text-heading-m">프론트엔드 개발 14기</h3></div>
+                <div class="course-card-main display-flex flex-column">
+                  <div class="course-card-main-difficulty display-flex">
+                    <ul class="display-flex">
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                      <li class="display-flex align-items-center"><span class="difficulty-gui-off"></span></li>
+                    </ul>
+                    <span class="text-body-s-auto">중급&#8231;Python 기초 권장</span>
+                  </div>
+                  <p class="text-body-m">
+                    의미론적 HTML 구조를 바탕으로 반응형 웹 디자인을 구현합니다. 반응형 웹과 모듈형
+                    CSS로 확장 가능한 디자인을 설계합니다. Figma를 활용하여 사용자 중심 인터페이스를
+                    설계합니다.
+                  </p>
+                  <div class="course-card-main-stack display-flex">
+                    <span class="material-icons text-body-icon-m">build</span>
+                    <span>Python, LLM, RAG</span>
+                  </div>
+                  <hr>
+                  <div class="course-card-main-cta display-flex justify-content-between">
+                    <span class="info-rounded text-body-s-auto">교육비 전액 무료</span>
+                    <a href="#" class="text-link-s">상세보기 &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+ <!-- 최윤지 : 성장 로드맵 시작-->
+<section class="roadmap container">
+  <div class="roadmap-left">
+    <div class="roadmap-title">
+      <span>이스트 캠프</span>
+      <h2>성장 로드맵</h2>
+    </div>
+    <div class="roadmap-desc">
+      <p>비전공자도 체계적인 커리큘럼 아래</p>
+      <p>실무 역량을 쉽게 키울 수 있습니다.</p>
+    </div>
+  </div>
+  <div class="roadmap-right">
+    <div class="roadmap-card">
+      <div class="roadmap-card-header">
+        <div class="roadmap-card-icon">
+          <span class="material-icons">credit_card</span>
+        </div>
+        <div class="roadmap-badge">3 주차</div>
+      </div>
+      <h3>01.입문과정</h3>
+      <div class="roadmap-card-image">
+        <img src="image/image_4.png" alt="">
+      </div>
+      <p class="roadmap-card-desc">전공 지식이 없어도 괜찮습니다. CS기초, 알고리즘 사고력, 개발 환경 구축 등 앞으로의 성장을 위한 단단한 뿌리를 내리는 시기입니다.</p>
+    </div>
+    <div class="roadmap-card">
+      <div class="roadmap-card-header">
+        <div class="roadmap-card-icon">
+          <span class="material-icons">credit_card</span>
+        </div>
+        <div class="roadmap-badge">3 주차</div>
+      </div>
+      <h3>02.핵심역량</h3>
+      <div class="roadmap-card-image">
+        <img src="image/image_4.png" alt="">
+      </div>
+      <p class="roadmap-card-desc">선택 직무의 핵심 기술 스택 학습 및 기초 프로젝트를 진행하는 단계입니다. 실무에서 가장 많이 쓰이는 도구들을 익힙니다.</p>
+    </div>
+    <div class="roadmap-card">
+      <div class="roadmap-card-header">
+        <div class="roadmap-card-icon">
+          <span class="material-icons">credit_card</span>
+        </div>
+        <div class="roadmap-badge">3 주차</div>
+      </div>
+      <h3>03.심화설계</h3>
+      <div class="roadmap-card-image">
+        <img src="image/image_4.png" alt="">
+      </div>
+      <p class="roadmap-card-desc">아키텍처 패턴 학습, 대규모 데이터 처리 및 성능 최적화 과정을 거치며 고급 엔지니어로 도약합니다.</p>
+    </div>
+    <div class="roadmap-card">
+      <div class="roadmap-card-header">
+        <div class="roadmap-card-icon">
+          <span class="material-icons">credit_card</span>
+        </div>
+        <div class="roadmap-badge">3 주차</div>
+      </div>
+      <h3>04.실전업무</h3>
+      <div class="roadmap-card-image">
+        <img src="image/image_4.png" alt="">
+      </div>
+      <p class="roadmap-card-desc">기업 연계 실무 프로젝트 및 포트폴리오 완성 단계입니다. 실제 비즈니스 문제를 해결하며 실무 역량을 입증합니다.</p>
+    </div>
+  </div>
+</section>
+<!-- 최윤지 : 성장 로드맵 끝-->
+
+      <!-- 최수민 : 추천 대상 및 교육 혜택 시작 -->
+    <section class="target-section">
+    <div class="target-inner container">
+        <h2 class="hidden">추천 대상 및 교육 혜택</h2>
+
+        <div class="target-header">
+            <h2>
+                <span class="highlight">누구에게나</span> 열려있는<br />
+                성장의 기회
+            </h2>
+            <p>
+                열정 가득한 분들이라면 전공과 상관없이<br />
+                여러분의 가능성을 믿고 지금 바로 도전하세요.
+            </p>
+        </div>
+
+        <div class="target-list">
+            <div class="target-item">
+                <div class="icon-box">
+                    <span class="material-icons">school</span>
+                </div>
+                <div class="target-text">
+                    <strong>비전공자도 당당하게, 기초부터 실무까지</strong>
+                    <p>전담 멘토진의 밀착 케어와 실시간 교육을 통해 비전공자분들도 어려움 없이 커리어 전환이 가능합니다.</p>
+                </div>
+            </div>
+
+            <div class="target-item">
+                <div class="icon-box">
+                    <span class="material-icons">psychology</span>
+                </div>
+                <div class="target-text">
+                    <strong>현업 1% 전문가의 실무 노하우와 인사이트</strong>
+                    <p>실무 경력 10년 이상의 전/현직 전문가가 주강사로 참여하여 현장의 생생한 실무 경험을 전수합니다.</p>
+                </div>
+            </div>
+
+            <div class="target-item">
+                <div class="icon-box">
+                    <span class="material-icons">groups</span>
+                </div>
+                <div class="target-text">
+                    <strong>실제 서비스를 활용한 실전 프로젝트 경험</strong>
+                    <p>이스트소프트의 실제 서비스를 활용해 다양한 실무를 다루며, 독보적인 포트폴리오를 제작합니다.</p>
+                </div>
+            </div>
+
+            <div class="target-item">
+                <div class="icon-box">
+                    <span class="material-icons">work_outline</span>
+                </div>
+                <div class="target-text">
+                    <strong>단순 수료를 넘어 취업 성공까지 확실하게</strong>
+                    <p>자소서 첨삭부터 모의 면접까지, 여러분이 원하는 기업의 문을 열 수 있도록 끝까지 함께합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contents-section">
+    <div class="contents-inner container">
+        <div class="contents-header">
+            <h2>이스트캠프 콘텐츠</h2>
+            <p>이스트캠프의 생생한 이야기를 들어보세요!</p>
+        </div>
+
+        <div class="card-list">
+            <article class="contents-card">
+                <div class="card-image">
+                    <img src="./image/content1.png" alt="부트캠프 취업 이야기">
+                </div>
+                <div class="card-body">
+                    <h3>부트캠프만 풀 수 있을까?</h3>
+                    <p>청년 고용률의 내리막.. 현실은 잔혹하지만, 돌파구는 있습니다.</p>
+                    <a href="#" class="more-link">자세히 보기</a>
+                </div>
+            </article>
+
+            <article class="contents-card">
+                <div class="card-image">
+                    <img src="./image/content2.png" alt="PM 인터뷰">
+                </div>
+                <div class="card-body">
+                    <h3>"결정적 차이? AI 시대 맞춤 교육이라는 점"</h3>
+                    <p>이스트캠프 PM 김인서님의 릴레이 인터뷰</p>
+                    <a href="#" class="more-link">자세히 보기</a>
+                </div>
+            </article>
+
+            <article class="contents-card">
+                <div class="card-image">
+                    <img src="./image/content3.png" alt="백엔드 강사 인터뷰">
+                </div>
+                <div class="card-body">
+                    <h3>"백엔드는 취업 자리가 비교적 많아요"</h3>
+                    <p>이스트캠프 백엔드 개발 정동형 강사님의 릴레이 인터뷰</p>
+                    <a href="#" class="more-link">자세히 보기</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- 최수민 : 추천 대상 및 교육 혜택 끝 -->
+      <!-- CTA 박은수 -->
+      <section class="CTA">
+        <h3>이스트캠프에 참여하고 </h3>
+        <h3><span class="highlight">시장에서 찾는 전문가</span>로 거듭나세요!</h3>
+        <img src="" alt="logo-image">
+        <button class="Big-CTA">지금 바로 지원하기</button>
+      </section>
+    </main>
+    <!-- footer 박은수 -->
+    <footer>
+      <div class="foot_top">
+        <div class="main">
+          <div>
+            <p>ESTSOFT CORP.</p>
+            <p>서울특별시 서초구 반포대로 3 이스트빌딩</p>
+          </div>
+          <div class="Icon">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>
+            <ul>
+              <li><a href="">program</a>
+                <ul>
+                  <li>Java Backend</li>
+                  <li>AI Service</li>
+                  <li>Data Analytics</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="">Company</a>
+                <ul>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms of Service</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <br>
+        <div class="foot_bottom">
+          <p>Copyright © 2024 ESTSOFT CORP.</p>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+>>>>>>> main
   </body>
+
 </html>
