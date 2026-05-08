@@ -72,7 +72,7 @@ header {
   z-index: 1000;
   background-color: var(--color-black);
 }
-header>div:first-child{
+header > div:first-child {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -449,7 +449,7 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
-   transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .roadmap-card-icon span {
@@ -457,46 +457,47 @@ nav > ul {
   font-size: var(--font-body-icon-l);
 }
 
-.card-2 .roadmap-card-icon { 
-  background-color: rgba(99, 102, 241, 0.15); 
-  border-color: var(--color-roadmap-card-2); }
-.card-2 .roadmap-card-icon span { 
-  color: var(--color-roadmap-card-2); 
+.card-2 .roadmap-card-icon {
+  background-color: rgba(99, 102, 241, 0.15);
+  border-color: var(--color-roadmap-card-2);
 }
-.card-2 .roadmap-badge { 
-  background-color: var(--color-roadmap-card-2); 
+.card-2 .roadmap-card-icon span {
+  color: var(--color-roadmap-card-2);
 }
-.card-3 .roadmap-card-icon { 
-  background-color: rgba(16, 185, 129, 0.15); 
-  border-color: var(--color-roadmap-card-3); 
+.card-2 .roadmap-badge {
+  background-color: var(--color-roadmap-card-2);
 }
-.card-3 .roadmap-card-icon span { 
-  color: var(--color-roadmap-card-3); 
+.card-3 .roadmap-card-icon {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-color: var(--color-roadmap-card-3);
 }
-.card-3 .roadmap-badge { 
-  background-color: var(--color-roadmap-card-3); 
+.card-3 .roadmap-card-icon span {
+  color: var(--color-roadmap-card-3);
 }
-.card-4 .roadmap-card-icon { 
-  background-color: rgba(251, 191, 36, 0.15); 
-  border-color: var(--color-roadmap-card-4); 
+.card-3 .roadmap-badge {
+  background-color: var(--color-roadmap-card-3);
 }
-.card-4 .roadmap-card-icon span { 
-  color: var(--color-roadmap-card-4); 
+.card-4 .roadmap-card-icon {
+  background-color: rgba(251, 191, 36, 0.15);
+  border-color: var(--color-roadmap-card-4);
 }
-.card-4 .roadmap-badge { 
-  background-color: var(--color-roadmap-card-4); 
+.card-4 .roadmap-card-icon span {
+  color: var(--color-roadmap-card-4);
 }
-.roadmap-card:hover .roadmap-card-icon { 
-  box-shadow: 0 0 15px rgba(47, 104, 197, 0.5); 
+.card-4 .roadmap-badge {
+  background-color: var(--color-roadmap-card-4);
 }
-.card-2:hover .roadmap-card-icon { 
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); 
+.roadmap-card:hover .roadmap-card-icon {
+  box-shadow: 0 0 15px rgba(47, 104, 197, 0.5);
 }
-.card-3:hover .roadmap-card-icon { 
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5); 
+.card-2:hover .roadmap-card-icon {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
 }
-.card-4:hover .roadmap-card-icon { 
-  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5); 
+.card-3:hover .roadmap-card-icon {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+}
+.card-4:hover .roadmap-card-icon {
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
 }
 
 .roadmap-badge {
