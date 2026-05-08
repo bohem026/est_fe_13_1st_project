@@ -162,34 +162,19 @@ nav > ul{
   border-radius: 20px;
 }
 
-/*--- toggle button ---*/
-.hidden-radio {
-  display: none;
-}
-.toggle-label {
-  cursor: pointer;
-}
-.toggle-label a {
-  pointer-events: none;
+.course-wrapper > div:first-child {
+  display: flex;
+  gap: 10px;
 }
 
-#toggle-online:checked ~ .cta-group .both-btn,
-#toggle-both:checked ~ .cta-group .online-btn {
-  /* layout */
-  padding-top: 6.75px;
-  padding-bottom: 6.75px;
-  /* style */
-  background: var(--color-transparent);
-  color: var(--color-light-primary);
-  border: 2px solid var(--color-light-primary);
+.course-wrapper > div:last-child {
+  gap: var(--base-row-unit);
 }
-/*--- toggle button ---*/
 
 .course-card {
   /* layout */
-  width: 392px;
+  width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
-  box-sizing: border-box;
   /* style */
   background: var(--color-black);
   border-radius: 20px;
@@ -207,12 +192,6 @@ nav > ul{
   width: 100%;
   gap: var(--base-col-unit);
 }
-
-/* 
-.course-wrapper > div:last-child > div:last-child article:last-child {
-  background: var(--color-transparent);
-}
-   */
 
 .course-card-header > span:last-child {
   background: var(--color-red-low-transparency);
@@ -332,18 +311,6 @@ nav > ul{
   }
 }
 /*============== 주후산: 강좌 소개 ==============*/
-
-.course-card-main p {
-  margin-bottom: var(--base-row-unit);
-}
-
-.course-card-main hr {
-  border: 0;
-  height: 1px;
-  width: 100%;
-  margin: 0;
-  background: var(--color-gray);
-}
 
 /* 최윤지: roadmap 시작 */
 .roadmap {
@@ -511,6 +478,8 @@ nav > ul{
 }
 
 .target-inner {
+  max-width: 1272px; /* 강사님 피드백 반영 너비 */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -617,6 +586,8 @@ nav > ul{
 }
 
 .contents-inner {
+  max-width: 1272px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
