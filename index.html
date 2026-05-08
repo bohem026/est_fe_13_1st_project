@@ -118,7 +118,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="display-flex flex-column">
       <section class="hero-wrapper display-flex justify-content-center align-items-center">
         <div class="display-flex flex-column justify-content-center align-items-center">
           <div class="display-flex flex-column align-items-center">
@@ -131,7 +131,7 @@
       <!-- 1st_project_nav -->
 
       <!-- 주후산: 강좌 소개 -->
-      <section class="course-wrapper container">
+      <section id="course" class="container course-wrapper">
         <!-- toggle button -->
         <input type="radio" id="toggle-online" name="course-type" class="hidden-radio" checked />
         <input type="radio" id="toggle-both" name="course-type" class="hidden-radio" />
@@ -692,7 +692,7 @@
           </div>
           <div>
             <img src="image/mascot.png" alt="hero_logo" />
-            <a href="#" class="text-link-m cta-base">지금 바로 지원하기</a>
+            <a href="#course" class="text-link-m cta-base">지금 바로 지원하기</a>
           </div>
         </div>
       </section>
@@ -730,7 +730,10 @@
         </div>
         <hr />
         <div class="display-flex justify-content-between">
-          <a href="https://github.com/bohem026/est_fe_13_1st_project.git" target="_blank" class="display-flex" 
+          <a
+            href="https://github.com/bohem026/est_fe_13_1st_project.git"
+            target="_blank"
+            class="display-flex"
             ><span class="material-icons text-body-icon-l">link</span>GitHub</a
           >
           <input type="radio" id="toggle-popup" class="hidden-radio" />
