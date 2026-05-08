@@ -67,6 +67,16 @@ body {
 }
 
 .container {
-  width: 1272px;
+  max-width: 1272px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
