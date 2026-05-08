@@ -1,4 +1,3 @@
-/*============== 주후산: 강좌 소개 ==============*/
 .cta-base {
   /* layout */
   height: calc(var(--base-row-unit) * 2);
@@ -11,6 +10,19 @@
   background: var(--color-light-primary);
   color: var(--color-white);
 }
+
+/*============== 1st_project_nav ==============*/
+.cta-nav{
+  height: fit-content;
+  padding: 0 22px;
+  background: var(--color-primary);
+}
+
+.nav-link-base{
+  height: 39px;
+  /* padding: 0 22px; */
+}
+/*============== 1st_project_nav ==============*/
 
 .cta-icon {
   width: 150px;
@@ -43,6 +55,100 @@
   border: 1px solid var(--color-white);
 }
 
+/*============== 1st_project_nav ==============*/
+/*======= nav =======*/
+.hidden-text {
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-black);
+}
+header > div > div{
+  height: calc(var(--base-row-unit) * 3);
+  width: calc(100% - calc(var(--base-col-unit) * 4));
+  padding-left: var(--base-col-unit);
+  margin: auto;
+}
+nav > ul{
+  gap: 44px;
+}
+.logo{
+  align-items: center;
+}
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-white);
+}
+/*======= nav =======*/
+
+/*======= hero =======*/
+.hero-wrapper{
+  height: 540px;
+  padding-top: calc(var(--base-row-unit) * 3);
+  margin-bottom: calc(var(--base-row-unit) * 3);
+  background: radial-gradient(
+    circle 960px at center, 
+    var(--color-navy) 0%,
+    var(--color-black) 100%
+  );
+}
+.hero-wrapper > div{
+  width: fit-content;
+  height: 100%;
+  gap: 47.5px;
+}
+/*======= hero =======*/
+
+@media (max-width: 767px) {
+  .hamburger-btn {
+    display: flex;
+  }
+  nav > ul {
+    /* layout */
+    flex-direction: column;
+    position: absolute;
+    top: calc(var(--base-row-unit) * 3 + 10px);
+    right: var(--base-col-unit);
+    width: 200px;
+    z-index: 9999;
+    padding: 20px;
+    gap: var(--base-row-unit);
+    /* style */
+    background: var(--color-light-black);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  nav > ul li:last-child > a{
+    background-color: transparent;
+    height: fit-content;
+  }
+
+  .hero-wrapper > div {
+    scale: calc(100vw / 767px);
+  }
+}
+/*============== 1st_project_nav ==============*/
+
+/*============== 주후산: 강좌 소개 ==============*/
 .course-wrapper {
   /* layout */
   height: fit-content;
@@ -94,7 +200,7 @@
 .course-card:hover {
   /* animation */
   transform: scale(1.02);
-  box-shadow: 1px 1px 15px rgba(255, 255, 0,0.75);
+  box-shadow: 1px 1px 15px rgba(255, 255, 0, 0.75);
 }
 
 .course-card-row {
@@ -197,9 +303,13 @@
 }
 
 @media (max-width: 1023px) {
-  .container { width: 100%; }
+  .container {
+    width: 100%;
+  }
 
-  .course-wrapper{ border-radius: 0px; }
+  .course-wrapper {
+    border-radius: 0px;
+  }
 
   .course-card-row {
     flex-direction: column;
