@@ -11,7 +11,7 @@
   color: var(--color-white);
 }
 
-/*============== 1st_project_nav ==============*/
+/*============== 주후산: 1st_project_nav ==============*/
 .cta-nav {
   height: fit-content;
   padding: 0 22px;
@@ -22,7 +22,7 @@
   height: 39px;
   /* padding: 0 22px; */
 }
-/*============== 1st_project_nav ==============*/
+/*============== 주후산: 1st_project_nav ==============*/
 
 .cta-icon {
   width: 150px;
@@ -55,7 +55,7 @@
   border: 1px solid var(--color-white);
 }
 
-/*============== 1st_project_nav ==============*/
+/*============== 주후산: 1st_project_nav ==============*/
 /*======= nav =======*/
 .hidden-text {
   position: absolute;
@@ -71,6 +71,10 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: var(--color-black);
+}
+header>div:first-child{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 header > div > div {
   height: calc(var(--base-row-unit) * 3);
@@ -146,7 +150,7 @@ nav > ul {
     scale: calc(100vw / 767px);
   }
 }
-/*============== 1st_project_nav ==============*/
+/*============== 주후산: 1st_project_nav ==============*/
 
 /*============== 주후산: 강좌 소개 ==============*/
 .course-wrapper {
@@ -303,18 +307,20 @@ nav > ul {
 }
 
 @media (max-width: 1023px) {
-  .container {
+  /* .container {
     width: 100%;
-  }
+  } */
 
   .course-wrapper {
     border-radius: 0px;
+    padding-top: 27px;
   }
 
   .course-card-row {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: calc(100% + 27px);
   }
 
   .course-card {
@@ -741,7 +747,8 @@ nav > ul {
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0 20px;
+    padding: var(--base-row-unit) var(--base-col-unit);
+    border-radius: 0;
     box-sizing: border-box;
   }
 
@@ -793,3 +800,89 @@ nav > ul {
     height: auto;
   }
 }
+
+/*============== 주후산: popup, feature-footer ==============*/
+/*======= popup =======*/
+#popup {
+  position: fixed;
+  left: calc(var(--base-col-unit) * 2);
+  top: calc(var(--base-row-unit) * 4);
+  width: fit-content;
+  height: fit-content;
+  padding: calc(var(--base-row-unit) * 2) var(--base-col-unit);
+  background: navy;
+  z-index: 999999;
+  border-radius: 20px;
+}
+
+#popup div:last-child a {
+  gap: 3px;
+}
+
+#popup div:last-child > a:hover {
+  background: white;
+  color: navy;
+}
+
+#popup div:last-child > label > a {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: red;
+}
+
+#popup hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background: var(--color-light-primary);
+}
+
+article:has(#toggle-popup:checked) {
+  display: none;
+}
+/*======= popup =======*/
+
+/*======= footer-cta-section =======*/
+.footer-cta-section {
+  padding: calc(var(--base-row-unit) * 3);
+  background: linear-gradient(
+    to bottom,
+    var(--color-black) 0%,
+    var(--color-navy) 50%,
+    var(--color-black) 100%
+  );
+}
+.footer-cta-section > div {
+  gap: calc(var(--base-row-unit) * 5);
+}
+.footer-cta-section img {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - calc(111px / 2));
+  z-index: 1;
+}
+.footer-cta-section img + a {
+  position: relative;
+  z-index: 2;
+}
+.footer-cta-section div:has(img) {
+  position: relative;
+}
+.footer-cta-section div h2 > strong {
+  color: var(--color-light-primary);
+}
+
+@media (max-width: 767px) {
+  .footer-cta-section > div > div:first-child {
+    scale: calc(100vw / 767px);
+    transform-origin: bottom;
+    width: max-content;
+  }
+}
+/*======= footer-cta-section =======*/
+
+/*======= footer =======*/
+
+/*======= footer =======*/
+/*============== 주후산: feature-footer ==============*/
