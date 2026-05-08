@@ -72,6 +72,10 @@ header {
   z-index: 1000;
   background-color: var(--color-black);
 }
+header>div:first-child{
+  padding-top: 0;
+  padding-bottom: 0;
+}
 header > div > div {
   height: calc(var(--base-row-unit) * 3);
   width: calc(100% - calc(var(--base-col-unit) * 4));
