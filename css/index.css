@@ -449,11 +449,54 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
+   transition: box-shadow 0.3s ease;
 }
 
 .roadmap-card-icon span {
   color: var(--color-light-primary);
   font-size: var(--font-body-icon-l);
+}
+
+.card-2 .roadmap-card-icon { 
+  background-color: rgba(99, 102, 241, 0.15); 
+  border-color: var(--color-roadmap-card-2); }
+.card-2 .roadmap-card-icon span { 
+  color: var(--color-roadmap-card-2); 
+}
+.card-2 .roadmap-badge { 
+  background-color: var(--color-roadmap-card-2); 
+}
+.card-3 .roadmap-card-icon { 
+  background-color: rgba(16, 185, 129, 0.15); 
+  border-color: var(--color-roadmap-card-3); 
+}
+.card-3 .roadmap-card-icon span { 
+  color: var(--color-roadmap-card-3); 
+}
+.card-3 .roadmap-badge { 
+  background-color: var(--color-roadmap-card-3); 
+}
+.card-4 .roadmap-card-icon { 
+  background-color: rgba(251, 191, 36, 0.15); 
+  border-color: var(--color-roadmap-card-4); 
+}
+.card-4 .roadmap-card-icon span { 
+  color: var(--color-roadmap-card-4); 
+}
+.card-4 .roadmap-badge { 
+  background-color: var(--color-roadmap-card-4); 
+}
+.roadmap-card:hover .roadmap-card-icon { 
+  box-shadow: 0 0 15px rgba(47, 104, 197, 0.5); 
+}
+.card-2:hover .roadmap-card-icon { 
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); 
+}
+.card-3:hover .roadmap-card-icon { 
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5); 
+}
+.card-4:hover .roadmap-card-icon { 
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5); 
 }
 
 .roadmap-badge {
@@ -496,6 +539,28 @@ nav > ul {
   color: var(--color-super-light-gray);
   margin: 0;
 }
+
+@media (max-width: 1023px) {
+  .roadmap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-left {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .roadmap-right {
+    width: 100%;
+  }
+
+  .roadmap-card {
+    width: 100%;
+  }
+}
+
 /* 최윤지: roadmap 끝 */
 /* --- 최수민 : 추천 대상 및 교육 혜택 스타일 (최종본) --- */
 
