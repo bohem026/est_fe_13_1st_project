@@ -22,8 +22,8 @@
 
 .cta-reversed {
   /* layout */
-  padding-top: 7.75px;
-  padding-bottom: 7.75px;
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
   /* style */
   background: var(--color-transparent);
   color: var(--color-light-primary);
@@ -58,65 +58,26 @@
 
 .course-wrapper > div:first-child {
   display: flex;
-  /* gap: 10px; */
+  gap: 10px;
 }
 
 .course-wrapper > div:last-child {
   gap: var(--base-row-unit);
-  margin: auto;
 }
-
-/* toggle button */
-.hidden-radio {
-  display: none;
-}
-.toggle-label {
-  cursor: pointer;
-}
-.toggle-label a {
-  pointer-events: none;
-}
-
-#toggle-online:checked ~ .cta-group .both-btn,
-#toggle-both:checked ~ .cta-group .online-btn {
-  /* layout */
-  padding-top: 6.75px;
-  padding-bottom: 6.75px;
-  /* style */
-  background: var(--color-transparent);
-  color: var(--color-light-primary);
-  border: 2px solid var(--color-light-primary);
-}
-/* toggle button */
 
 .course-card {
   /* layout */
   width: 376px;
   padding: var(--base-row-unit) var(--base-col-unit);
-  box-sizing: border-box;
   /* style */
   background: var(--color-black);
   border-radius: 20px;
-  /* animation */
-  transition: transform 0.3s ease;
-}
-
-.course-card:hover {
-  /* animation */
-  transform: scale(1.02);
-  box-shadow: 1px 1px 15px rgba(255, 255, 0, 0.75);
 }
 
 .course-card-row {
-  width: fit-content;
+  width: 100%;
   gap: var(--base-col-unit);
 }
-
-/* 
-.course-wrapper > div:last-child > div:last-child article:last-child {
-  background: var(--color-transparent);
-}
-   */
 
 .course-card-header > span:last-child {
   background: var(--color-red-low-transparency);
@@ -366,25 +327,16 @@
   margin: 0;
 }
 /* 최윤지: roadmap 끝 */
-
-/* --- 최수민 : 추천 대상 및 교육 혜택 스타일 시작 --- */
-
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
+/* --- 최수민 : 추천 대상 및 교육 혜택 스타일 (최종본) --- */
 
 .target-section {
-  margin: 50px 0;
   width: 100%;
+  margin: 50px 0;
 }
 
-/* 강사님 피드백 반영: 섹션 안의 inner 박스에 레이아웃 설정 */
 .target-inner {
+  max-width: 1272px; /* 강사님 피드백 반영 너비 */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -393,7 +345,7 @@
   border-radius: 20px;
   color: var(--color-white);
   gap: 50px;
-  flex-direction: row-reverse; /* HTML 구조 변경에 맞춰 제목을 오른쪽으로 배치 */
+  flex-direction: row-reverse;
 }
 
 .target-list {
@@ -407,6 +359,7 @@
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  cursor: pointer;
 }
 
 .icon-box {
@@ -419,12 +372,21 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-light-primary-low-transparency);
+  transition: all 0.3s ease;
 }
 
-/* Material Icons 사용을 위해 span으로 설정 */
 .icon-box span {
   font-size: 24px;
   color: var(--color-light-primary);
+}
+
+.target-item:hover .icon-box {
+  transform: scale(1.1) rotate(5deg);
+  background-color: var(--color-light-primary);
+}
+
+.target-item:hover .icon-box span {
+  color: var(--color-white);
 }
 
 .target-text {
@@ -474,22 +436,15 @@
   margin: 0;
 }
 
-/* --- 최수민 : 콘텐츠 섹션 스타일 시작 --- */
-
-body {
-  background-color: var(--color-black);
-  margin: 0;
-}
+/* --- 최수민 : 콘텐츠 섹션 스타일 (최종본) --- */
 
 .contents-section {
   padding: 80px 0;
 }
 
 .contents-inner {
-  background-color: transparent;
-  padding: 60px 80px;
-  border-radius: 20px;
-  color: var(--color-white);
+  max-width: 1272px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,11 +474,14 @@ body {
   background: var(--color-light-black);
   border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
 }
 
 .contents-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .card-image img {
@@ -534,27 +492,21 @@ body {
 
 .card-body {
   padding: 24px;
-}
-
-/* 팀원 추가 코스 카드 보정 */
-.course-card-title {
-  height: calc(var(--base-row-unit) * 3);
-}
-
-.course-card-main-difficulty {
-  gap: 10px;
-}
-
-.course-card-main-difficulty > ul {
   display: flex;
-  gap: 3px;
+  flex-direction: column;
+  flex: 1;
 }
 
-.difficulty-gui {
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-light-primary);
-  border-radius: 50%;
+.more-link {
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--color-light-primary);
+  text-decoration: none;
+  font-size: var(--font-body-s);
+  transition: color 0.3s ease;
+}
+
+.contents-card:hover .more-link {
+  color: var(--color-white);
+  text-decoration: underline;
 }
