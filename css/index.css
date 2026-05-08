@@ -12,13 +12,13 @@
 }
 
 /*============== 1st_project_nav ==============*/
-.cta-nav{
+.cta-nav {
   height: fit-content;
   padding: 0 22px;
   background: var(--color-primary);
 }
 
-.nav-link-base{
+.nav-link-base {
   height: 39px;
   /* padding: 0 22px; */
 }
@@ -72,16 +72,16 @@ header {
   z-index: 1000;
   background-color: var(--color-black);
 }
-header > div > div{
+header > div > div {
   height: calc(var(--base-row-unit) * 3);
   width: calc(100% - calc(var(--base-col-unit) * 4));
   padding-left: var(--base-col-unit);
   margin: auto;
 }
-nav > ul{
+nav > ul {
   gap: 44px;
 }
-.logo{
+.logo {
   align-items: center;
 }
 .hamburger-btn {
@@ -101,17 +101,17 @@ nav > ul{
 /*======= nav =======*/
 
 /*======= hero =======*/
-.hero-wrapper{
+.hero-wrapper {
   height: 540px;
   padding-top: calc(var(--base-row-unit) * 3);
   margin-bottom: calc(var(--base-row-unit) * 3);
   background: radial-gradient(
-    circle 960px at center, 
+    circle 960px at center,
     var(--color-navy) 0%,
     var(--color-black) 100%
   );
 }
-.hero-wrapper > div{
+.hero-wrapper > div {
   width: fit-content;
   height: 100%;
   gap: 47.5px;
@@ -135,9 +135,9 @@ nav > ul{
     /* style */
     background: var(--color-light-black);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-  nav > ul li:last-child > a{
+  nav > ul li:last-child > a {
     background-color: transparent;
     height: fit-content;
   }
@@ -200,7 +200,7 @@ nav > ul{
 .course-card:hover {
   /* animation */
   transform: scale(1.02);
-  box-shadow: 1px 1px 15px rgba(255, 255, 0,0.75);
+  box-shadow: 1px 1px 15px rgba(255, 255, 0, 0.75);
 }
 
 .course-card-row {
@@ -303,9 +303,13 @@ nav > ul{
 }
 
 @media (max-width: 1023px) {
-  .container { width: 100%; }
+  .container {
+    width: 100%;
+  }
 
-  .course-wrapper{ border-radius: 0px; }
+  .course-wrapper {
+    border-radius: 0px;
+  }
 
   .course-card-row {
     flex-direction: column;
@@ -625,8 +629,6 @@ nav > ul{
 }
 
 .contents-inner {
-  max-width: 1272px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -691,4 +693,60 @@ nav > ul{
 .contents-card:hover .more-link {
   color: var(--color-white);
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .target-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .target-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .target-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .target-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .target-text {
+    word-break: keep-all;
+  }
+
+  .contents-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contents-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
 }
