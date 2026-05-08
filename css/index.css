@@ -51,16 +51,6 @@
   border-radius: 20px;
 }
 
-.course-wrapper > div {
-  display: flex;
-  gap: 10px;
-}
-
-.course-wrapper > div:last-child {
-  gap: var(--base-row-unit);
-  margin: auto;
-}
-
 /*--- toggle button ---*/
 .hidden-radio {
   display: none;
@@ -86,7 +76,7 @@
 
 .course-card {
   /* layout */
-  width: 376px;
+  width: 392px;
   padding: var(--base-row-unit) var(--base-col-unit);
   box-sizing: border-box;
   /* style */
@@ -103,7 +93,7 @@
 }
 
 .course-card-row {
-  width: fit-content;
+  width: 100%;
   gap: var(--base-col-unit);
 }
 
@@ -117,21 +107,22 @@
   background: var(--color-red-low-transparency);
   border-color: var(--color-red);
   color: var(--color-red);
-  font-weight: bold;
 }
 
-.course-card {
-  width: 376px;
-  padding: var(--base-row-unit) var(--base-col-unit);
-  background: var(--color-black);
-  border-radius: 20px;
+.course-card-title {
+  height: calc(var(--base-row-unit) * 3);
 }
 
-/* --- 최수민 : 추천 대상 및 교육 혜택 스타일 시작 --- */
+.course-card-main {
+  gap: 16px;
+}
 
-.hidden {
-  position: absolute;
-  width: 1px;
+.course-card-main p {
+  margin-bottom: var(--base-row-unit);
+}
+
+.course-card-main hr {
+  border: 0;
   height: 1px;
   width: 100%;
   margin: 0;
@@ -203,6 +194,8 @@
 @media (max-width: 1023px) {
   .container { width: 100%; }
 
+  .course-wrapper{ border-radius: 0px; }
+
   .course-card-row {
     flex-direction: column;
     align-items: center;
@@ -224,6 +217,15 @@
   }
 }
 /*============== 주후산: 강좌 소개 ==============*/
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background: var(--color-gray);
+}
 
 /* 최윤지: roadmap 시작 */
 .roadmap {
@@ -395,7 +397,7 @@ body {
 }
 
 /* 팀원 추가 코스 카드 보정 */
-.course-card-title {
+/* .course-card-title {
   height: calc(var(--base-row-unit) * 3);
 }
 
@@ -415,4 +417,4 @@ body {
   height: 10px;
   background-color: var(--color-light-primary);
   border-radius: 50%;
-}
+} */
