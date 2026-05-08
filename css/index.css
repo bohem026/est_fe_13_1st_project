@@ -56,28 +56,57 @@
   border-radius: 20px;
 }
 
-.course-wrapper > div:first-child {
-  display: flex;
-  gap: 10px;
+/*--- toggle button ---*/
+.hidden-radio {
+  display: none;
+}
+.toggle-label {
+  cursor: pointer;
+}
+.toggle-label a {
+  pointer-events: none;
 }
 
-.course-wrapper > div:last-child {
-  gap: var(--base-row-unit);
+#toggle-online:checked ~ .cta-group .both-btn,
+#toggle-both:checked ~ .cta-group .online-btn {
+  /* layout */
+  padding-top: 6.75px;
+  padding-bottom: 6.75px;
+  /* style */
+  background: var(--color-transparent);
+  color: var(--color-light-primary);
+  border: 2px solid var(--color-light-primary);
 }
+/*--- toggle button ---*/
 
 .course-card {
   /* layout */
-  width: 376px;
+  width: 392px;
   padding: var(--base-row-unit) var(--base-col-unit);
+  box-sizing: border-box;
   /* style */
   background: var(--color-black);
   border-radius: 20px;
+  /* animation */
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  /* animation */
+  transform: scale(1.02);
+  box-shadow: 1px 1px 15px rgba(255, 255, 0,0.75);
 }
 
 .course-card-row {
   width: 100%;
   gap: var(--base-col-unit);
 }
+
+/* 
+.course-wrapper > div:last-child > div:last-child article:last-child {
+  background: var(--color-transparent);
+}
+   */
 
 .course-card-header > span:last-child {
   background: var(--color-red-low-transparency);
@@ -167,7 +196,44 @@
   color: var(--color-light-primary);
 }
 
+@media (max-width: 1023px) {
+  .container { width: 100%; }
+
+  .course-wrapper{ border-radius: 0px; }
+
+  .course-card-row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .course-card {
+    /* layout */
+    width: 100%;
+  }
+
+  .course-card:hover {
+    /* animation */
+    transform: scale(1.01);
+  }
+
+  .course-card-title {
+    height: fit-content;
+  }
+}
 /*============== 주후산: 강좌 소개 ==============*/
+
+.course-card-main p {
+  margin-bottom: var(--base-row-unit);
+}
+
+.course-card-main hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  background: var(--color-gray);
+}
 
 /* 최윤지: roadmap 시작 */
 .roadmap {
