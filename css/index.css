@@ -506,3 +506,65 @@
   color: var(--color-white);
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  /* 1. 화면 가로 꽉 채우고 양옆 여백 살짝 주기 */
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* 2. ✨여기가 핵심!✨ 제목이랑 카드 덩어리를 위아래로 찢기 */
+  .target-inner {
+    display: flex;
+    flex-direction: column; /* PC에서 가로였던 걸 세로로 바꿈! */
+  }
+
+  /* 3. 제목 가운데 정렬 & 아래 간격 띄우기 */
+  .target-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* 4. 카드 4개 위아래로 차곡차곡 쌓기 */
+  .target-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* 5. 좁은 화면에서 단어 찢어지는 현상 방지 */
+  .target-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .target-text {
+    word-break: keep-all;
+  }
+
+  /* --- 이스트캠프 콘텐츠 섹션도 똑같이 세로로 쌓기 --- */
+  .contents-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contents-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+}
