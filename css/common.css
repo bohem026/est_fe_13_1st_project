@@ -67,11 +67,12 @@ body {
 }
 
 .container {
-  max-width: 1272px;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 1272px; /* 최대 너비를 1272px로 제한 */
+  width: 100%; /* 화면이 1272px보다 작아지면 화면에 꽉 차게 줄어듦 (반응형) */
+  margin: 0 auto; /* 가운데 정렬 */
 }
 
+/* 접근성을 위해 화면에는 안 보이지만 스크린 리더는 읽을 수 있게 숨기는 클래스 */
 .hidden {
   position: absolute;
   width: 1px;

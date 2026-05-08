@@ -74,7 +74,6 @@
 
 /*  최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 
-/* 💡 화면 깨짐 방지용 투명 망토 */
 .hidden {
   position: absolute;
   width: 1px;
@@ -84,17 +83,21 @@
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-/* 최수민 : 추천 대상 및 교육 혜택 스타일 시작 */
 .target-section {
-  margin: 50px auto;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.target-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-navy); /* 변수 적용: 배경색 */
+  background-color: var(--color-navy);
   padding: 60px 80px;
   border-radius: 20px;
-  color: var(--color-white); /* 변수 적용: 기본 폰트색 */
+  color: var(--color-white);
   gap: 50px;
+  flex-direction: row-reverse;
 }
 
 .target-list {
@@ -114,19 +117,16 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border: 1px solid var(--color-light-primary); /* 변수 적용: 파란색 테두리 */
+  border: 1px solid var(--color-light-primary);
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(
-    --color-light-primary-low-transparency
-  ); /* 변수 적용: 파란색 반투명 배경 */
+  background-color: var(--color-light-primary-low-transparency);
 }
 
-.icon-box img {
-  width: 24px;
-  height: 24px;
+.icon-box span {
+  font-size: 24px;
 }
 
 .target-text {
@@ -136,16 +136,15 @@
 }
 
 .target-text strong {
-  font-size: var(--font-body-m); /* 변수 적용: 16px */
+  font-size: var(--font-body-m);
   font-weight: 600;
   color: var(--color-white);
   line-height: 1.4;
 }
 
 .target-text p {
-  font-size: var(--font-body-s-plus); /* 변수 적용: 14px */
-  color: var(--color-super-light-gray); /* 변수 적용: 회색 폰트 */
-  line-height: 1.6;
+  font-size: var(--font-body-s-plus);
+  color: var(--color-super-light-gray);
   margin: 0;
 }
 
@@ -159,27 +158,25 @@
 }
 
 .target-header h2 {
-  font-size: var(--font-heading-m); /* 변수 적용: 32px */
+  font-size: var(--font-heading-m);
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
 }
 
 .target-header .highlight {
-  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
+  color: var(--color-light-primary);
 }
 
 .target-header p {
-  font-size: var(--font-body-m); /* 변수 적용: 16px */
+  font-size: var(--font-body-m);
   color: var(--color-super-light-gray);
   line-height: 1.6;
   margin: 0;
 }
-/* 최수민 : 추천 대상 및 교육 혜택 스타일 끝 */
 
-/* 최수민 : 콘텐츠 섹션 스타일 시작 */
 body {
-  background-color: var(--color-black); /* 변수 적용: 전체 배경색 */
+  background-color: var(--color-black);
   margin: 0;
 }
 
@@ -188,7 +185,6 @@ body {
 }
 
 .contents-inner {
-  margin: 0 auto;
   background-color: transparent;
   padding: 60px 80px;
   border-radius: 20px;
@@ -198,16 +194,15 @@ body {
   align-items: center;
 }
 
-/* 헤더 부분 */
 .contents-header {
   text-align: center;
   margin-bottom: 50px;
 }
 
 .contents-header h2 {
-  font-size: var(--font-heading-m); /* 변수 적용: 32px */
+  font-size: var(--font-heading-m);
   font-weight: 700;
-  color: var(--color-light-primary); /* 변수 적용: 포인트 파란색 */
+  color: var(--color-light-primary);
   margin-bottom: 10px;
 }
 
@@ -220,7 +215,7 @@ body {
 
 .contents-card {
   flex: 1;
-  background: var(--color-light-black); /* 변수 적용: 카드 배경색 */
+  background: var(--color-light-black);
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease;
