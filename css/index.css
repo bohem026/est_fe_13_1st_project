@@ -933,7 +933,6 @@ footer {
   height: 139px;
 }
 .link-column {
-  width: 118px;
   height: 139px;
 }
 .link-column ul {
@@ -943,7 +942,6 @@ footer {
   font-size: var(--font-body-m);
   font-weight: bold;
   color: var(--color-white);
-  line-height: normal;
 }
 .link-column ul li a {
   display: block;
@@ -953,7 +951,6 @@ footer {
 }
 .link-column ul li:last-child a {
   line-height: 20px;
-  vertical-align: middle;
 }
 /* footer-bottom-wrapper */
 .footer-bottom-wrapper {
@@ -969,11 +966,11 @@ footer {
 /* footer-bottom */
 .footer-bottom {
   gap: 1px;
-  height: 14px;
+  height: fit-content;
   box-sizing: border-box;
 }
 .bottom-text {
-  height: 16px;
+  height: fit-content;
   padding: 0 var(--base-col-unit);
   box-sizing: border-box;
 }
