@@ -884,6 +884,137 @@ article:has(#toggle-popup:checked) {
 /*======= footer-cta-section =======*/
 
 /*======= footer =======*/
-
+/* 최윤지: footer 시작 */
+footer {
+  padding: var(--base-row-unit) var(--base-col-unit);
+  gap: calc(var(--base-row-unit) * 2);
+  box-sizing: border-box;
+  background-color: var(--color-black);
+}
+/* footer-top */
+.footer-top {
+  align-items: flex-end;
+  height: 139px;
+  box-sizing: border-box;
+}
+.footer-info {
+  gap: var(--base-row-unit);
+  box-sizing: border-box;
+}
+.footer-info-text {
+  gap: 12px;
+}
+.company-name {
+  font-size: var(--font-body-m-plus-2-upper);
+  line-height: var(--base-row-unit);
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0;
+}
+.address {
+  font-size: var(--font-body-m);
+  line-height: var(--base-row-unit);
+  color: var(--color-super-light-gray);
+  margin: 0;
+}
+.sns-icons {
+  gap: 20px;
+}
+.sns-icons a {
+  color: var(--color-icon-gray);
+  font-size: var(--font-body-icon-l);
+  line-height: var(--base-row-unit);
+}
+/* footer-links */
+.footer-links {
+  gap: calc(var(--base-col-unit) * 2);
+  height: 139px;
+}
+.link-column {
+  width: 118px;
+  height: 139px;
+}
+.link-column ul {
+  gap: 12px;
+}
+.link-column strong {
+  font-size: var(--font-body-m);
+  font-weight: bold;
+  color: var(--color-white);
+  line-height: normal;
+}
+.link-column ul li a {
+  display: block;
+  font-size: var(--font-body-s-plus);
+  line-height: normal;
+  color: var(--color-super-light-gray);
+}
+.link-column ul li:last-child a {
+  line-height: 20px;
+  vertical-align: middle;
+}
+/* footer-bottom-wrapper */
+.footer-bottom-wrapper {
+  gap: var(--base-row-unit);
+  padding: 0;
+  box-sizing: border-box;
+}
+/* footer-divider */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  margin: 0;
+  background: var(--color-gray);
+}
+/* footer-bottom */
+.footer-bottom {
+  gap: 1px;
+  height: 14px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bottom-text {
+  height: 16px;
+  padding: 0 var(--base-col-unit);
+  box-sizing: border-box;
+}
+.copyright,
+.slogan {
+  font-size: var(--font-body-s-plus-auto);
+  line-height: normal;
+  color: var(--color-light-gray);
+  margin: 0;
+}
+@media (max-width: 1023px) {
+    footer {
+    gap: var(--base-row-unit);
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    gap: var(--base-row-unit);
+  }
+  .footer-links {
+    height: fit-content;
+  }
+  .link-column {
+    height: fit-content;
+    justify-content: flex-start;
+    gap: var(--base-row-unit);
+  }
+  .footer-bottom-wrapper {
+    gap: 12px;
+  }
+  .bottom-text {
+    flex-direction: column;
+    height: fit-content;
+    gap: 4px;
+  }
+   .footer-bottom {
+    height: fit-content;
+  }
+}
+/* 최윤지: footer 끝 */
 /*======= footer =======*/
 /*============== 주후산: feature-footer ==============*/
