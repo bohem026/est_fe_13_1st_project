@@ -92,6 +92,12 @@
   line-height: var(--base-row-unit);
 }
 
+.text-heading-s {
+  font-size: var(--font-heading-s);
+  line-height: calc(var(--base-row-unit) * 2);
+  font-weight: bold;
+}
+
 .text-heading-m {
   font-size: var(--font-heading-m);
   line-height: calc(var(--base-row-unit) * 2);
