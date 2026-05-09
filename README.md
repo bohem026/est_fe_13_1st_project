@@ -28,7 +28,7 @@
 
 | 이&nbsp;&nbsp;&nbsp;&nbsp;름 | 역할 | 세부 담당 | GitHub | Email |
 | :--- | :--- | :--- | :--- | :--- |
-| 주후산 | 팀장 / 기획 / 디자인 / FE | HTML-nav,hero,faq / CSS-nav,hero,faq | [bohem026](https://github.com/bohem026) | microbin98@gmail.com |
+| 주후산 | 팀장 / 기획 / 디자인 / 발표 / FE | HTML-nav,hero,cta / CSS-nav,hero,cta | [bohem026](https://github.com/bohem026) | microbin98@gmail.com |
 | 박은수 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
 | 최성호 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
 | 최수민 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
