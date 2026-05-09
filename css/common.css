@@ -33,7 +33,7 @@
   --color-red-low-transparency: rgba(198, 90, 90, 0.15);
   --color-transparent: rgba(255, 255, 255, 0);
   --color-roadmap-card-2: #6366f1;
-  --color-roadmap-card-3: #16A34A; 
+  --color-roadmap-card-3: #16a34a;
   --color-roadmap-card-4: #b45309;
 
   /*=========================== Text-size styles ==================*/
@@ -75,6 +75,8 @@ body {
   max-width: 1272px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .hidden {
