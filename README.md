@@ -18,7 +18,7 @@
 
 ### 🔗 관련 링크
 * **[Figma 디자인 가이드](https://www.figma.com/design/N1MXdC6zbEh08Q9GSEn96V/estbootcamp-design?node-id=69-268&t=FdAB4pE4hIDFy7MC-1)**
-* **[FigJam 발표 자료](https://www.figma.com/deck/yhQHtPIpOcckhutvmGf1RJ)**
+* **[Slides 발표 자료](https://www.figma.com/deck/yhQHtPIpOcckhutvmGf1RJ)**
 <br>
 
 ## 📝 프로젝트 상세
