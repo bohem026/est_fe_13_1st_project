@@ -192,6 +192,7 @@ nav > ul {
 .course-card {
   /* layout */
   width: 392px;
+  height: fit-content;
   padding: var(--base-row-unit) var(--base-col-unit);
   box-sizing: border-box;
   /* style */

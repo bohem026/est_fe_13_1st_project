@@ -54,6 +54,7 @@
   --font-body-icon-l: calc(var(--base-font) * 1.6875); /* 27px */
 
   /* Heading */
+  --font-heading-s: calc(var(--base-font) * 1.875); /* 30px */
   --font-heading-m: calc(var(--base-font) * 2); /* 32px */
   --font-heading-l: calc(var(--base-font) * 3); /* 48px */
   --font-heading-xl: calc(var(--base-font) * 3.4375); /* 55px */
