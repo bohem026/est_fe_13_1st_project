@@ -875,9 +875,9 @@ article:has(#toggle-popup:checked) {
   color: var(--color-light-primary);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .footer-cta-section > div > div:first-child {
-    scale: calc(100vw / 767px);
+    scale: calc(100vw / 1023px);
     transform-origin: bottom;
     width: max-content;
   }
