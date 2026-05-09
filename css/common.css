@@ -17,6 +17,7 @@
   --color-light-gray: #6e6e6e;
   --color-light-gray-low-transparency: rgba(110, 110, 110, 0.15);
   --color-super-light-gray: #cfcfcf;
+  --color-icon-gray: #8b9491;
 
   /* Navy & Primary */
   --color-navy: #101a2b;
@@ -31,6 +32,9 @@
   --color-red: #c65a5a;
   --color-red-low-transparency: rgba(198, 90, 90, 0.15);
   --color-transparent: rgba(255, 255, 255, 0);
+  --color-roadmap-card-2: #6366f1;
+  --color-roadmap-card-3: #16a34a;
+  --color-roadmap-card-4: #b45309;
 
   /*=========================== Text-size styles ==================*/
   /* Link */
@@ -50,6 +54,7 @@
   --font-body-icon-l: calc(var(--base-font) * 1.6875); /* 27px */
 
   /* Heading */
+  --font-heading-s: calc(var(--base-font) * 1.875); /* 30px */
   --font-heading-m: calc(var(--base-font) * 2); /* 32px */
   --font-heading-l: calc(var(--base-font) * 3); /* 48px */
   --font-heading-xl: calc(var(--base-font) * 3.4375); /* 55px */
@@ -70,6 +75,8 @@ body {
   max-width: 1272px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .hidden {
