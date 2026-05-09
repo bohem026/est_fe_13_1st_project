@@ -459,7 +459,7 @@ nav > ul {
 }
 
 .card-2 .roadmap-card-icon {
-  background-color: rgba(99, 102, 241, 0.15);
+  background-color: rgba(30, 95, 192, 0.15);
   border-color: var(--color-roadmap-card-2);
 }
 .card-2 .roadmap-card-icon span {
@@ -469,7 +469,7 @@ nav > ul {
   background-color: var(--color-roadmap-card-2);
 }
 .card-3 .roadmap-card-icon {
-  background-color: rgba(16, 185, 129, 0.15);
+  background-color: rgba(18, 84, 187, 0.15);
   border-color: var(--color-roadmap-card-3);
 }
 .card-3 .roadmap-card-icon span {
@@ -479,7 +479,7 @@ nav > ul {
   background-color: var(--color-roadmap-card-3);
 }
 .card-4 .roadmap-card-icon {
-  background-color: rgba(251, 191, 36, 0.15);
+  background-color: rgba(12, 77, 182, 0.15);
   border-color: var(--color-roadmap-card-4);
 }
 .card-4 .roadmap-card-icon span {
@@ -492,13 +492,13 @@ nav > ul {
   box-shadow: 0 0 15px rgba(47, 104, 197, 0.5);
 }
 .card-2:hover .roadmap-card-icon {
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 15px rgba(30, 95, 192, 0.5);
 }
 .card-3:hover .roadmap-card-icon {
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 15px rgba(18, 84, 187, 0.5);
 }
 .card-4:hover .roadmap-card-icon {
-  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+  box-shadow: 0 0 15px rgba(12, 77, 182, 0.5);
 }
 
 .roadmap-badge {
