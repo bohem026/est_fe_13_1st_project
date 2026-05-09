@@ -950,7 +950,7 @@ footer {
   color: var(--color-super-light-gray);
 }
 .link-column ul li:last-child a {
-  line-height: 20px; 
+  line-height: 20px;
 }
 /* footer-bottom-wrapper */
 .footer-bottom-wrapper {
