@@ -89,6 +89,3 @@
 │   └── guide_css.md       # css 컨벤션 가이드
 └── README.md
 ```
-<br>
-
-## 💭 제작 후기
