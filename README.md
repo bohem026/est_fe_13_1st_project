@@ -5,73 +5,83 @@
 <br>
 
 ## 👥 팀 정보
-* **팀명**: 7(칠)해드림
-<br>
+
+- **팀명**: 7(칠)해드림
+  <br>
 
 ## 📅 프로젝트 개요
-* **과정명**: 오르미캠프 프론트엔드 13기
-* **제작기간**: 2026.05.06 ~ 2026.05.11 (총 6일)
-* **개발환경**: 
-    * **Language**: HTML5, CSS3
-    * **Tools**: Visual Studio Code, Git, GitHub
-    * **Design**: Figma, FigJam
+
+- **과정명**: 오르미캠프 프론트엔드 13기
+- **제작기간**: 2026.05.06 ~ 2026.05.11 (총 6일)
+- **개발환경**:
+  - **Language**: HTML5, CSS3
+  - **Tools**: Visual Studio Code, Git, GitHub
+  - **Design**: Figma, FigJam
 
 ### 🔗 관련 링크
-* **[Figma 디자인 가이드](https://www.figma.com/design/N1MXdC6zbEh08Q9GSEn96V/estbootcamp-design?node-id=69-268&t=FdAB4pE4hIDFy7MC-1)**
-* **[Slides 발표 자료](https://www.figma.com/deck/yhQHtPIpOcckhutvmGf1RJ)**
-<br>
+
+- **[Figma 디자인 가이드](https://www.figma.com/design/N1MXdC6zbEh08Q9GSEn96V/estbootcamp-design?node-id=69-268&t=FdAB4pE4hIDFy7MC-1)**
+- **[Slides 발표 자료](https://www.figma.com/deck/yhQHtPIpOcckhutvmGf1RJ)**
+  <br>
 
 ## 📝 프로젝트 상세
 
 ### 1. 목표 및 역할
+
 **목표**: 1단위기간 내의 HTML/CSS 수업 내용을 토대로 협업하여, 1920px 해상도를 기준으로 하되 모바일(767px 이하)까지 완벽하게 대응하는 리뉴얼 페이지 구현
 
-| 이&nbsp;&nbsp;&nbsp;&nbsp;름 | 역할 | 세부 담당 | GitHub | Email |
-| :--- | :--- | :--- | :--- | :--- |
-| 주후산 | 팀장 / 기획 / 디자인 / 발표 / FE | HTML-nav,hero,cta / CSS-nav,hero,cta | [bohem026](https://github.com/bohem026) | microbin98@gmail.com |
-| 박은수 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
-| 최성호 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
-| 최수민 | 팀원 /  | 작업 내용 | [아이디](개인 깃허브 주소) | 이메일 |
-| 최윤지 | 팀원 / 기획 / 디자인 / FE | HTML-roadmap / CSS-roadmap,footer | [yoonji220](https://github.com/yoonji220) | choiyj220220@gmail.com |
+| 이름   | 역할 | 세부 담당                                                                                           | GitHub                                    | Email                  |
+| :----- | :--- | :-------------------------------------------------------------------------------------------------- | :---------------------------------------- | :--------------------- |
+| 주후산 | 팀장 | 기획 / 디자인 / 발표 / FE / HTML-nav,hero,cta / CSS-nav,hero,cta                                    | [bohem026](https://github.com/bohem026)   | microbin98@gmail.com   |
+| 박은수 | 팀원 | 작업 내용 작성                                                                                      | [아이디](개인 깃허브 주소)                | 이메일                 |
+| 최성호 | 팀원 | 작업 내용 작성                                                                                      | [아이디](개인 깃허브 주소)                | 이메일                 |
+| 최수민 | 팀원 | 기획 / 디자인 / FE / HTML-Recommendation & Benefits section, footer / CSS-Target & Benefits section | [soomln](https://github.com/soomln)       | qnfehr948@gmail.com    |
+| 최윤지 | 팀원 | 기획 / 디자인 / FE / HTML-roadmap / CSS-roadmap,footer                                              | [yoonji220](https://github.com/yoonji220) | choiyj220220@gmail.com |
 
 ### 2. 마일스톤
-* **1일차(2026-05-06)**:
-    * 디자인 및 HTML/CSS 파트 분배
-    * 디자인 시안 작성
-* **2일차**:
-    * 디자인 시안 작업 마무리
-    * 팀 Git/GitHub 설정
-    * 공통 HTML/CSS 작성
-* **3-4일차**:
-    * 피드백 수정
-    * 개인 파트 작업
-* **5일차**:
-    * 개인 파트 작업 마무리
-    * 시안과 대조 비교 및 수정
-    * 크로스 브라우저 테스트
-    * 웹 표준 검사
-* **6일차(2026-05-11)**:
-    * 최종 배포
-    * 발표 슬라이드 제작
+
+- **1일차(2026-05-06)**:
+  - 디자인 및 HTML/CSS 파트 분배
+  - 디자인 시안 작성
+- **2일차**:
+  - 디자인 시안 작업 마무리
+  - 팀 Git/GitHub 설정
+  - 공통 HTML/CSS 작성
+- **3-4일차**:
+  - 피드백 수정
+  - 개인 파트 작업
+- **5일차**:
+  - 개인 파트 작업 마무리
+  - 시안과 대조 비교 및 수정
+  - 크로스 브라우저 테스트
+  - 웹 표준 검사
+- **6일차(2026-05-11)**:
+  - 최종 배포
+  - 발표 슬라이드 제작
 
 ### 3. 주요 목표
-* **전환 흐름 설계**: CTA 버튼 확대 배치와 종스크롤 중심의 레이아웃, 그리고 고정 퀵메뉴를 통해 지원 페이지까지 끊김 없는 사용자 동선을 구축
-* **UI/레이아웃 구조 개선**: 카드 UI의 확장과 충분한 여백 확보, 그리고 텍스트 중심의 섹션 재정리를 통해 정보 탐색의 편의성과 가독성을 극대화
-* **디자인 시스템 방향**: 단색 배경의 미니멀 디자인과 직관적인 인포그래픽을 활용하여 불필요한 요소를 제거하고 핵심 콘텐츠에 시각적 집중도를 부여
-* **콘텐츠 및 인터렉션 강화**: 단계별 난이도 시각화와 차별화된 캐치프레이즈, 그리고 동적인 이벤트 효과를 적용하여 비전공자도 신뢰할 수 있는 매력적인 페이지를 완성
-<br>
+
+- **전환 흐름 설계**: CTA 버튼 확대 배치와 종스크롤 중심의 레이아웃, 그리고 고정 퀵메뉴를 통해 지원 페이지까지 끊김 없는 사용자 동선을 구축
+- **UI/레이아웃 구조 개선**: 카드 UI의 확장과 충분한 여백 확보, 그리고 텍스트 중심의 섹션 재정리를 통해 정보 탐색의 편의성과 가독성을 극대화
+- **디자인 시스템 방향**: 단색 배경의 미니멀 디자인과 직관적인 인포그래픽을 활용하여 불필요한 요소를 제거하고 핵심 콘텐츠에 시각적 집중도를 부여
+- **콘텐츠 및 인터렉션 강화**: 단계별 난이도 시각화와 차별화된 캐치프레이즈, 그리고 동적인 이벤트 효과를 적용하여 비전공자도 신뢰할 수 있는 매력적인 페이지를 완성
+  <br>
 
 ## 🚀 배포
-* **[GitHub Pages](깃허브 페이지 URL)**
-<br>
+
+- **[GitHub Pages](깃허브 페이지 URL)**
+  <br>
 
 ## 🛠 개발 컨벤션 가이드
+
 프로젝트의 일관성을 위해 정의한 가이드라인입니다.
-* **[HTML 작성 가이드](./docs/guide_html.md)**
-* **[CSS 작성 가이드](./docs/guide_css.md)**
-<br>
+
+- **[HTML 작성 가이드](./docs/guide_html.md)**
+- **[CSS 작성 가이드](./docs/guide_css.md)**
+  <br>
 
 ## 📂 프로젝트 구조
+
 ```text
 📦ROOT
 ├── 📜index.html
