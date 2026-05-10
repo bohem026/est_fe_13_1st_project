@@ -32,9 +32,9 @@
   --color-red: #c65a5a;
   --color-red-low-transparency: rgba(198, 90, 90, 0.15);
   --color-transparent: rgba(255, 255, 255, 0);
-  --color-roadmap-card-2: #6366f1;
-  --color-roadmap-card-3: #16a34a;
-  --color-roadmap-card-4: #b45309;
+  --color-roadmap-card-2: #1e5fc0;
+  --color-roadmap-card-3: #1254bb;
+  --color-roadmap-card-4: #0c4db6;
 
   /*=========================== Text-size styles ==================*/
   /* Link */
