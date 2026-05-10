@@ -14,7 +14,7 @@
   --color-black: #0b0e14;
   --color-light-black: #161b22;
   --color-gray: #353941;
-  --color-light-gray: #6e6e6e;
+  --color-light-gray: #9c9c9c;
   --color-light-gray-low-transparency: rgba(110, 110, 110, 0.15);
   --color-super-light-gray: #cfcfcf;
   --color-icon-gray: #8b9491;
@@ -23,15 +23,16 @@
   --color-navy: #101a2b;
   --color-primary: #0c4db6;
   --color-primary-low-transparency: rgba(12, 77, 182, 0.15);
-  --color-light-primary: #2f68c5;
+  --color-light-primary: #7da8ec;
   --color-light-primary-low-transparency: rgba(47, 104, 197, 0.15);
 
   /* White & Accents */
   --color-white: #f0f6fc;
   --color-white-low-transparency: rgba(240, 246, 252, 0.15);
-  --color-red: #c65a5a;
+  --color-red: #e99797;
   --color-red-low-transparency: rgba(198, 90, 90, 0.15);
   --color-transparent: rgba(255, 255, 255, 0);
+  --color-roadmap-card-1: #286dd4;
   --color-roadmap-card-2: #1e5fc0;
   --color-roadmap-card-3: #1254bb;
   --color-roadmap-card-4: #0c4db6;
