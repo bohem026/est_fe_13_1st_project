@@ -396,6 +396,7 @@ nav > ul {
   line-height: calc(var(--base-row-unit) * 2);
   color: var(--color-super-light-gray);
   margin: 0;
+  white-space: nowrap; /* 파이어폭스 렌더링 엔진 줄바꿈 방지 */
 }
 
 .roadmap-desc p + p {
