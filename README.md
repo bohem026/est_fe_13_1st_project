@@ -36,7 +36,7 @@
 | 박은수 | 팀원 | 작업 내용 작성                                                                                      | [아이디](개인 깃허브 주소)                | 이메일                 |
 | 최성호 | 팀원 | 작업 내용 작성                                                                                      | [아이디](개인 깃허브 주소)                | 이메일                 |
 | 최수민 | 팀원 | 기획 / 디자인 / FE / HTML-Recommendation & Benefits section, footer / CSS-Target & Benefits section | [soomln](https://github.com/soomln)       | qnfehr948@gmail.com    |
-| 최윤지 | 팀원 | 기획 / 디자인 / FE / HTML-roadmap / CSS-roadmap,footer                                              | [yoonji220](https://github.com/yoonji220) | choiyj220220@gmail.com |
+| 최윤지 | 팀원 | 기획 / 디자인 / 회의록 작성 / FE / HTML-roadmap / CSS-roadmap,footer                                 | [yoonji220](https://github.com/yoonji220) | choiyj220220@gmail.com |
 
 ### 2. 마일스톤
 
