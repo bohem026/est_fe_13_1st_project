@@ -7,7 +7,7 @@
   box-sizing: border-box;
   /* style */
   border-radius: 5px;
-  background: var(--color-light-primary);
+  background: var(--color-primary);
   color: var(--color-white);
 }
 
@@ -184,8 +184,8 @@ nav > ul {
   padding-bottom: 6.75px;
   /* style */
   background: var(--color-transparent);
-  color: var(--color-light-primary);
-  border: 2px solid var(--color-light-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
 }
 /*--- toggle button ---*/
 
@@ -449,7 +449,7 @@ nav > ul {
   padding: 13px 15px 14px 15px;
   border-radius: 15px;
   background-color: var(--color-light-primary-low-transparency);
-  border: 1px solid var(--color-light-primary);
+  border: 1px solid var(--color-roadmap-card-1);
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -458,7 +458,7 @@ nav > ul {
 }
 
 .roadmap-card-icon span {
-  color: var(--color-light-primary);
+  color: var(--color-roadmap-card-1);
   font-size: var(--font-body-icon-l);
 }
 
@@ -509,7 +509,7 @@ nav > ul {
   height: var(--base-row-unit); /* 27px */
   padding: 3.75px 12px;
   border-radius: 9999px;
-  background-color: var(--color-light-primary);
+  background-color: var(--color-roadmap-card-1);
   color: var(--color-white);
   white-space: nowrap;
   box-sizing: border-box;
@@ -971,7 +971,7 @@ nav > ul {
 #popup div:last-child > label > a {
   padding-left: 10px;
   padding-right: 10px;
-  background: red;
+  background: #c70000;
 }
 
 #popup hr {
