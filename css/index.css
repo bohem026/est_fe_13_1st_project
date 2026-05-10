@@ -414,6 +414,7 @@ nav > ul {
   gap: var(--base-row-unit);
   background-color: var(--color-light-black);
   border-radius: 16px;
+  scrollbar-width: none; /* firefox */
 }
 
 .roadmap-right::-webkit-scrollbar {
