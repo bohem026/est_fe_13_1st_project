@@ -58,6 +58,9 @@
 - **6일차(2026-05-11)**:
   - 최종 배포
   - 발표 슬라이드 제작
+ <div align="center">
+  <img src="https://github.com/user-attachments/assets/a5abbd98-3d8e-4a58-8515-8d447ab74557" width="100%" alt="7해드림 간트차트" />
+</div>
 
 ### 3. 주요 목표
 
