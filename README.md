@@ -72,7 +72,7 @@
 
 ## 🚀 배포
 
-- **[GitHub Pages](깃허브 페이지 URL)**
+- **[GitHub Pages](https://bohem026.github.io/est_fe_13_1st_project/)**
 <br>
 
 ## 🛠 개발 컨벤션 가이드
