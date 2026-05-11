@@ -568,6 +568,8 @@ nav > ul {
   .roadmap {
     flex-direction: column;
     align-items: center;
+    padding: calc(var(--base-row-unit) * 2) calc(var(--base-col-unit) * 1);
+    overflow: visible;
   }
 
   .roadmap-left {
@@ -576,15 +578,21 @@ nav > ul {
     text-align: center;
   }
 
+  .roadmap-desc p {
+    white-space: normal;
+    word-break: keep-all;
+  }
+
   .roadmap-right {
     width: 100%;
+    max-width: 100%;
   }
 
   .roadmap-card {
     width: 100%;
+    max-width: 100%;
   }
 }
-
 /* 최윤지: roadmap 끝 */
 /* --- 최수민 : 추천 대상 및 교육 혜택 스타일 (최종본) --- */
 
