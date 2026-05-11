@@ -94,8 +94,7 @@
 │   ├── font-utility.css   # 폰트 서식 클래스
 │   ├── index.css          # 메인 페이지 전용 css
 │   ├── normalize.css      # 브라우저 간 일관성 확보
-│   ├── reset.css          # 기본 css 제거
-│   └── style.css          # !!!설명을 입력해주세요!!!
+│   └── reset.css          # 기본 css 제거
 ├── 📂image                # 이미지 폴더
 ├── 📂docs
 │   ├── guide_html.md      # html 컨벤션 가이드
