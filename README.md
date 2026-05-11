@@ -32,7 +32,7 @@
 
 | 이&nbsp;&nbsp;&nbsp;름&nbsp;   | 역&nbsp;&nbsp;&nbsp;할&nbsp; | 세부 담당                                                                                           | GitHub                                    | Email                  |
 | :----- | :--- | :-------------------------------------------------------------------------------------------------- | :---------------------------------------- | :--------------------- |
-| 주후산 | 팀장 | 기획 / 디자인 / 발표 / FE : HTML-nav,hero,cta CSS-nav,hero,cta                                    | [bohem026](https://github.com/bohem026)   | microbin98@gmail.com   |
+| 주후산 | 팀장 | 기획 / 디자인 / 발표 / FE : HTML-nav,hero,course_list,footer_cta CSS-nav,hero,course_list,footer_cta | [bohem026](https://github.com/bohem026)   | microbin98@gmail.com   |
 | 박은수 | 팀원 | 기획 / 디자인 / FE : HTML-nav,hero,footer                                                         | [jond0803](https://github.com/jond0803)   | jond0803@naver.com |
 | 최성호 | 팀원 | 기획 / 디자인 / FE : HTML-FAQ & Quick-button CSS-FAQ & Quick-button                     | [RONNIECHOI0324](https://github.com/RONNIECHOI0324) | chltjdgh0001@naver.com |
 | 최수민 | 팀원 | 기획 / 디자인 / FE : HTML-Recommendation & Benefits section, footer CSS-Target & Benefits section | [soomln](https://github.com/soomln)       | qnfehr948@gmail.com    |
